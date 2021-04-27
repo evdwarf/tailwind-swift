@@ -158,7 +158,9 @@ A description of this package.
 - [ ] Transition Timing Function
 - [ ] Transition Delay
 - [ ] Animation
-- [ ] TRANSFORMS
+- [ ] 
+### TRANSFORMS
+
 - [ ] Transform
 - [ ] Transform Origin
 - [ ] Scale
@@ -174,7 +176,9 @@ A description of this package.
 - [ ] Pointer Events
 - [ ] Resize
 - [ ] User Select
-- [ ] SVG
+
+### SVG
+
 - [ ] Fill
 - [ ] Stroke
 - [ ] Stroke Width
