@@ -78,7 +78,7 @@ public extension Tailwind {
         case bottom(TailwindMarginValueble)
         
         var number: Decimal? {
-            value.tailwindMarginNumber
+            marginValue.tailwindMarginNumber
         }
         
         var prefix:String {
@@ -88,7 +88,7 @@ public extension Tailwind {
             return number < 0 ? "-" : ""
         }
         
-        var value: TailwindMarginValueble {
+        var marginValue: TailwindMarginValueble {
             switch self {
             case .all(let num),
                  .left(let num),
@@ -102,22 +102,22 @@ public extension Tailwind {
         }
         
         var rawValue: RawValue {
-            let absValue = value.tailwindMarginValue
+            let value = marginValue.tailwindMarginValue
             switch self {
             case.all:
-                return "\(prefix)m-\(absValue)"
+                return "\(prefix)m-\(value)"
             case.left:
-                return "\(prefix)ml-\(absValue)"
+                return "\(prefix)ml-\(value)"
             case.right:
-                return "\(prefix)mr-\(absValue)"
+                return "\(prefix)mr-\(value)"
             case.x:
-                return "\(prefix)mx-\(absValue)"
+                return "\(prefix)mx-\(value)"
             case.y:
-                return "\(prefix)my-\(absValue)"
+                return "\(prefix)my-\(value)"
             case.top:
-                return "\(prefix)mt-\(absValue)"
+                return "\(prefix)mt-\(value)"
             case.bottom:
-                return "\(prefix)mb-\(absValue)"
+                return "\(prefix)mb-\(value)"
             }
         }
         
