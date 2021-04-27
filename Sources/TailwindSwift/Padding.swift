@@ -37,9 +37,9 @@ public extension Tailwind {
                 return "pb-\(num)"
             }
         }
+        
         public var tailwindValue: String {
             rawValue
         }
     }
-
 }

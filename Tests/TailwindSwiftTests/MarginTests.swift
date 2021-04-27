@@ -15,7 +15,7 @@ final class MarginTests: XCTestCase {
                         .tailwindValue, "m-0")
         XCTAssertEqual(Tailwind.Margin.all(-0.5)
                         .tailwindValue, "-m-0.5")
-        XCTAssertEqual(Tailwind.Margin.all(Tailwind.Margin.auto)
+        XCTAssertEqual(Tailwind.Margin.all(TailwindMarginAuto)
                         .tailwindValue, "m-auto")
     }
     func testLeft() {
@@ -23,7 +23,7 @@ final class MarginTests: XCTestCase {
                         .tailwindValue, "ml-0")
         XCTAssertEqual(Tailwind.Margin.left(-0.5)
                         .tailwindValue, "-ml-0.5")
-        XCTAssertEqual(Tailwind.Margin.left(Tailwind.Margin.auto)
+        XCTAssertEqual(Tailwind.Margin.left(TailwindMarginAuto)
                         .tailwindValue, "ml-auto")
         
     }
@@ -32,7 +32,7 @@ final class MarginTests: XCTestCase {
                         .tailwindValue, "mr-0")
         XCTAssertEqual(Tailwind.Margin.right(-0.5)
                         .tailwindValue, "-mr-0.5")
-        XCTAssertEqual(Tailwind.Margin.right(Tailwind.Margin.auto)
+        XCTAssertEqual(Tailwind.Margin.right(TailwindMarginAuto)
                         .tailwindValue, "mr-auto")
     }
     func testX() {
@@ -40,7 +40,7 @@ final class MarginTests: XCTestCase {
                         .tailwindValue, "mx-0")
         XCTAssertEqual(Tailwind.Margin.x(-0.5)
                         .tailwindValue, "-mx-0.5")
-        XCTAssertEqual(Tailwind.Margin.x(Tailwind.Margin.auto)
+        XCTAssertEqual(Tailwind.Margin.x(TailwindMarginAuto)
                         .tailwindValue, "mx-auto")
     }
     func testY() {
@@ -48,7 +48,7 @@ final class MarginTests: XCTestCase {
                         .tailwindValue, "my-0")
         XCTAssertEqual(Tailwind.Margin.y(0.5)
                         .tailwindValue, "my-0.5")
-        XCTAssertEqual(Tailwind.Margin.y(Tailwind.Margin.auto)
+        XCTAssertEqual(Tailwind.Margin.y(TailwindMarginAuto)
                         .tailwindValue, "my-auto")
     }
     func testTop() {
@@ -56,7 +56,7 @@ final class MarginTests: XCTestCase {
                         .tailwindValue, "mt-0")
         XCTAssertEqual(Tailwind.Margin.top(0.5)
                         .tailwindValue, "mt-0.5")
-        XCTAssertEqual(Tailwind.Margin.top(Tailwind.Margin.auto)
+        XCTAssertEqual(Tailwind.Margin.top(TailwindMarginAuto)
                         .tailwindValue, "mt-auto")
     }
     func testBottom() {
@@ -64,13 +64,7 @@ final class MarginTests: XCTestCase {
                         .tailwindValue, "mb-0")
         XCTAssertEqual(Tailwind.Margin.bottom(0.5)
                         .tailwindValue, "mb-0.5")
-        XCTAssertEqual(Tailwind.Margin.bottom(Tailwind.Margin.auto)
+        XCTAssertEqual(Tailwind.Margin.bottom(TailwindMarginAuto)
                         .tailwindValue, "mb-auto")
     }
 }
-
-
-
-
-
-
