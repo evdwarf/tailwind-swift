@@ -56,8 +56,8 @@ A description of this package.
 
 ### SPACING
 
-- [ ] [Padding](https://tailwindcss.com/docs/padding)
-- [ ] [Margin](https://tailwindcss.com/docs/margin)
+- [x] [Padding](https://tailwindcss.com/docs/padding)
+- [x] [Margin](https://tailwindcss.com/docs/margin)
 - [ ] [Space Between](https://tailwindcss.com/docs/space-between)
 
 ### SIZING
