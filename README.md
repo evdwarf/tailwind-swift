@@ -158,7 +158,7 @@ A description of this package.
 - [ ] Transition Timing Function
 - [ ] Transition Delay
 - [ ] Animation
-- [ ] 
+
 ### TRANSFORMS
 
 - [ ] Transform
