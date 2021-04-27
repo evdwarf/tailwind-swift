@@ -1,3 +1,2 @@
-struct TailwindSwift {
-    var text = "Hello, World!"
-}
+
+public struct Tailwind {}
