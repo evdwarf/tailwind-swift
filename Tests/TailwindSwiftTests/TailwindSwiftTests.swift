@@ -3,10 +3,12 @@ import XCTest
 
 final class TailwindSwiftTests: XCTestCase {
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(TailwindSwift().text, "Hello, World!")
+        XCTAssertEqual(Tailwind.Height.n(0)
+                        .tailwindValue, "h-0")
+        XCTAssertEqual(Tailwind.Height.n(0.5)
+                        .tailwindValue, "h-0.5")
+        XCTAssertEqual(Tailwind.Height.div(x: 1, y: 3)
+                        .tailwindValue, "h-1/3")
     }
 
     static var allTests = [
