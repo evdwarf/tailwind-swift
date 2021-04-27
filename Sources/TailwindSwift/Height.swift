@@ -7,9 +7,9 @@
 
 import Foundation
 
-extension Tailwind {
+public extension Tailwind {
 
-    public enum Height {
+    enum Height {
         typealias RawValue = String
         case h(Int)
         case auto
