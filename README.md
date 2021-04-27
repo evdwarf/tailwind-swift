@@ -168,7 +168,7 @@ A description of this package.
 ### TRANSFORMS
 
 - [ ] [Transform](https://tailwindcss.com/docs/transform)
-- [ ] [Transform Origin](https://tailwindcss.com/docs/transfrom-origin)
+- [ ] [Transform Origin](https://tailwindcss.com/docs/transform-origin)
 - [ ] [Scale](https://tailwindcss.com/docs/scale)
 - [ ] [Rotate](https://tailwindcss.com/docs/rotate)
 - [ ] [Translate](https://tailwindcss.com/docs/translate)
