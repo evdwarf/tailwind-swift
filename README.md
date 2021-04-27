@@ -48,24 +48,26 @@ A description of this package.
 - [ ] [Justify Items](https://tailwindcss.com/docs/justify-items)
 - [ ] [Justify Self](https://tailwindcss.com/docs/justify-self)
 - [ ] [Align Content](https://tailwindcss.com/docs/align-content)
-- [ ] Align Items
-- [ ] Align Self
-- [ ] Place Content
-- [ ] Place Items
-- [ ] Place Self
+- [ ] [Align Items](https://tailwindcss.com/docs/align-items)
+- [ ] [Align Self](https://tailwindcss.com/docs/align-self)
+- [ ] [Place Content](https://tailwindcss.com/docs/place-content)
+- [ ] [Place Items](https://tailwindcss.com/docs/place-items)
+- [ ] [Place Self](https://tailwindcss.com/docs/place-self)
 
 ### SPACING
 
-- [ ] Padding
-- [ ] Margin
-- [ ] Space Between
-- [ ] SIZING
-- [x] Width
-- [ ] Min-Width
-- [ ] Max-Width
-- [x] Height
-- [ ] Min-Height
-- [ ] Max-Height
+- [ ] [Padding](https://tailwindcss.com/docs/padding)
+- [ ] [Margin](https://tailwindcss.com/docs/margin)
+- [ ] [Space Between](https://tailwindcss.com/docs/space-between)
+
+### SIZING
+
+- [x] [Width](https://tailwindcss.com/docs/width)
+- [ ] [Min-Width](https://tailwindcss.com/docs/min-width)
+- [ ] [Max-Width](https://tailwindcss.com/docs/max-width)
+- [x] [Height](https://tailwindcss.com/docs/height)
+- [ ] [Min-Height](https://tailwindcss.com/docs/min-height)
+- [ ] [Max-Height](https://tailwindcss.com/docs/max-height)
 
 ### TYPOGRAPHY
 
