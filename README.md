@@ -71,116 +71,120 @@ A description of this package.
 
 ### TYPOGRAPHY
 
-- [ ] Font Family
-- [ ] Font Size
-- [ ] Font Smoothing
-- [ ] Font Style
-- [ ] Font Weight
-- [ ] Font Variant Numeric
-- [ ] Letter Spacing
-- [ ] Line Height
-- [ ] List Style Type
-- [ ] List Style Position
-- [ ] Placeholder Color
-- [ ] Placeholder Opacity
-- [ ] Text Align
-- [ ] Text Color
-- [ ] Text Opacity
-- [ ] Text Decoration
-- [ ] Text Transform
-- [ ] Text Overflow
-- [ ] Vertical Align
-- [ ] Whitespace
-- [ ] Word Break
+- [ ] [Font Family](https://tailwindcss.com/docs/font-family)
+- [ ] [Font Size](https://tailwindcss.com/docs/font-size)
+- [ ] [Font Smoothing](https://tailwindcss.com/docs/font-smoothing)
+- [ ] [Font Style](https://tailwindcss.com/docs/font-style)
+- [ ] [Font Weight](https://tailwindcss.com/docs/font-weight)
+- [ ] [Font Variant Numeric](https://tailwindcss.com/docs/font-variant)
+- [ ] [Letter Spacing](https://tailwindcss.com/docs/letter-spacing)
+- [ ] [Line Height](https://tailwindcss.com/docs/line-height)
+- [ ] [List Style Type](https://tailwindcss.com/docs/list-style-type)
+- [ ] [List Style Position](https://tailwindcss.com/docs/list-style-position)
+- [ ] [Placeholder Color](https://tailwindcss.com/docs/placeholder-color)
+- [ ] [Placeholder Opacity](https://tailwindcss.com/docs/placeholder-opacity)
+- [ ] [Text Align](https://tailwindcss.com/docs/text-align)
+- [ ] [Text Color](https://tailwindcss.com/docs/text-color)
+- [ ] [Text Opacity](https://tailwindcss.com/docs/text-opacity)
+- [ ] [Text Decoration](https://tailwindcss.com/docs/text-decoration)
+- [ ] [Text Transform](https://tailwindcss.com/docs/text-transform)
+- [ ] [Text Overflow](https://tailwindcss.com/docs/text-overflow)
+- [ ] [Vertical Align](https://tailwindcss.com/docs/vertical-align)
+- [ ] [Whitespace](https://tailwindcss.com/docs/whitespace)
+- [ ] [Word Break](https://tailwindcss.com/docs/word-break)
 
 ### BACKGROUNDS
 
-- [ ] Background Attachment
-- [ ] Background Clip
-- [ ] Background Color
-- [ ] Background Opacity
-- [ ] Background Position
-- [ ] Background Repeat
-- [ ] Background Size
-- [ ] Background Image
-- [ ] Gradient Color Stops
+- [ ] [Background Attachment](https://tailwindcss.com/docs/background-attachment)
+- [ ] [Background Clip](https://tailwindcss.com/docs/background-clip)
+- [ ] [Background Color](https://tailwindcss.com/docs/background-color)
+- [ ] [Background Opacity](https://tailwindcss.com/docs/background-opacity)
+- [ ] [Background Position](https://tailwindcss.com/docs/background-position)
+- [ ] [Background Repeat](https://tailwindcss.com/docs/background-repeat)
+- [ ] [Background Size](https://tailwindcss.com/docs/background-size)
+- [ ] [Background Image](https://tailwindcss.com/docs/background-image)
+- [ ] [Gradient Color Stops](https://tailwindcss.com/docs/gradient-color-stops)
 
 ### BORDERS
 
-- [ ] Border Radius
-- [ ] Border Width
-- [ ] Border Color
-- [ ] Border Opacity
-- [ ] Border Style
-- [ ] Divide Width
-- [ ] Divide Color
-- [ ] Divide Opacity
-- [ ] Divide Style
-- [ ] Ring Width
-- [ ] Ring Color
-- [ ] Ring Opacity
-- [ ] Ring Offset Width
-- [ ] Ring Offset Color
+- [ ] [Border Radius](https://tailwindcss.com/docs/border-radius)
+- [ ] [Border Width](https://tailwindcss.com/docs/border-width)
+- [ ] [Border Color](https://tailwindcss.com/docs/border-color)
+- [ ] [Border Opacity](https://tailwindcss.com/docs/border-opacity)
+- [ ] [Border Style](https://tailwindcss.com/docs/border-style)
+- [ ] [Divide Width](https://tailwindcss.com/docs/device-width)
+- [ ] [Divide Color](https://tailwindcss.com/docs/divide-color)
+- [ ] [Divide Opacity](https://tailwindcss.com/docs/divide-opacity)
+- [ ] [Divide Style](https://tailwindcss.com/docs/divide-style)
+- [ ] [Ring Width](https://tailwindcss.com/docs/ring-width)
+- [ ] [Ring Color](https://tailwindcss.com/docs/ring-color)
+- [ ] [Ring Opacity](https://tailwindcss.com/docs/ring-opacity)
+- [ ] [Ring Offset Width](https://tailwindcss.com/docs/ring-offset-width)
+- [ ] [Ring Offset Color](https://tailwindcss.com/docs/ring-offset-color)
 
 ### EFFECTS
 
-- [ ] Box Shadow
-- [ ] Opacity
-- [ ] Mix Blend Mode
-- [ ] Background Blend Mode
-- [ ] FILTERS
-- [ ] Filter
-- [ ] Blur
-- [ ] Brightness
-- [ ] Contrast
-- [ ] Drop Shadow
-- [ ] Grayscale
-- [ ] Hue Rotate
-- [ ] Invert
-- [ ] Saturate
-- [ ] Sepia
-- [ ] Backdrop Filter
-- [ ] Backdrop Blur
-- [ ] Backdrop Brightness
-- [ ] Backdrop Contrast
-- [ ] Backdrop Grayscale
-- [ ] Backdrop Hue Rotate
-- [ ] Backdrop Invert
-- [ ] Backdrop Opacity
-- [ ] Backdrop Saturate
-- [ ] Backdrop Sepia
+- [ ] [Box Shadow](https://tailwindcss.com/docs/box-shadow)
+- [ ] [Opacity](https://tailwindcss.com/docs/opacity)
+- [ ] [Mix Blend Mode](https://tailwindcss.com/docs/mix-blend-mode)
+- [ ] [Background Blend Mode](https://tailwindcss.com/docs/background-blend-mode)
+
+### FILTERS
+
+- [ ] [Filter](https://tailwindcss.com/docs/filter)
+- [ ] [Blur](https://tailwindcss.com/docs/blur)
+- [ ] [Brightness](https://tailwindcss.com/docs/brightness)
+- [ ] [Contrast](https://tailwindcss.com/docs/contrast)
+- [ ] [Drop Shadow](https://tailwindcss.com/docs/drop-shadow)
+- [ ] [Grayscale](https://tailwindcss.com/docs/grayscale)
+- [ ] [Hue Rotate](https://tailwindcss.com/docs/hue-rotate)
+- [ ] [Invert](https://tailwindcss.com/docs/invert)
+- [ ] [Saturate](https://tailwindcss.com/docs/saturate)
+- [ ] [Sepia](https://tailwindcss.com/docs/sepia)
+- [ ] [Backdrop Filter](https://tailwindcss.com/docs/backdrop-filter)
+- [ ] [Backdrop Blur](https://tailwindcss.com/docs/backdrop-blur)
+- [ ] [Backdrop Brightness](https://tailwindcss.com/docs/backdrop-brightness)
+- [ ] [Backdrop Contrast](https://tailwindcss.com/docs/backdrop-contrast)
+- [ ] [Backdrop Grayscale](https://tailwindcss.com/docs/backdrop-grayscale)
+- [ ] [Backdrop Hue Rotate](https://tailwindcss.com/docs/backdrop-hue-rotate)
+- [ ] [Backdrop Invert](https://tailwindcss.com/docs/backdrop-invert)
+- [ ] [Backdrop Opacity](https://tailwindcss.com/docs/backdrop-opacity)
+- [ ] [Backdrop Saturate](https://tailwindcss.com/docs/backdrop-saturate)
+- [ ] [Backdrop Sepia](https://tailwindcss.com/docs/backdrop-sepia)
 
 ### TABLES
 
-- [ ] Border Collapse
-- [ ] Table Layout
-- [ ] TRANSITIONS AND ANIMATION
-- [ ] Transition Property
-- [ ] Transition Duration
-- [ ] Transition Timing Function
-- [ ] Transition Delay
-- [ ] Animation
+- [ ] [Border Collapse](https://tailwindcss.com/docs/border-collapse)
+- [ ] [Table Layout](https://tailwindcss.com/docs/table-layout)
+
+### TRANSITIONS AND ANIMATION
+
+- [ ] [Transition Property](https://tailwindcss.com/docs/transition-property)
+- [ ] [Transition Duration](https://tailwindcss.com/docs/transition-duration)
+- [ ] [Transition Timing Function](https://tailwindcss.com/docs/transition-timing-function)
+- [ ] [Transition Delay](https://tailwindcss.com/docs/transition-delay)
+- [ ] [Animation](https://tailwindcss.com/docs/animation)
 
 ### TRANSFORMS
 
-- [ ] Transform
-- [ ] Transform Origin
-- [ ] Scale
-- [ ] Rotate
-- [ ] Translate
-- [ ] Skew
+- [ ] [Transform](https://tailwindcss.com/docs/transform)
+- [ ] [Transform Origin](https://tailwindcss.com/docs/transfrom-origin)
+- [ ] [Scale](https://tailwindcss.com/docs/scale)
+- [ ] [Rotate](https://tailwindcss.com/docs/rotate)
+- [ ] [Translate](https://tailwindcss.com/docs/translate)
+- [ ] [Skew](https://tailwindcss.com/docs/skew)
 
 ### INTERACTIVITY
 
-- [ ] Appearance
-- [ ] Cursor
-- [ ] Outline
-- [ ] Pointer Events
-- [ ] Resize
-- [ ] User Select
+- [ ] [Appearance](https://tailwindcss.com/docs/appearance)
+- [ ] [Cursor](https://tailwindcss.com/docs/cursor)
+- [ ] [Outline](https://tailwindcss.com/docs/outline)
+- [ ] [Pointer Events](https://tailwindcss.com/docs/pointer-events)
+- [ ] [Resize](https://tailwindcss.com/docs/resize)
+- [ ] [User Select](https://tailwindcss.com/docs/user-select)
 
 ### SVG
 
-- [ ] Fill
-- [ ] Stroke
-- [ ] Stroke Width
+- [ ] [Fill](https://tailwindcss.com/docs/fill)
+- [ ] [Stroke](https://tailwindcss.com/docs/stroke)
+- [ ] [Stroke Width](https://tailwindcss.com/docs/stroke-width)
