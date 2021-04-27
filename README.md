@@ -6,48 +6,48 @@ A description of this package.
 
 ### LAYOUT
 
-- [ ] Container
-- [ ] Box Decoration Break
-- [ ] Box Sizing
-- [ ] Display
-- [ ] Floats
-- [ ] Clear
-- [ ] Isolation
-- [ ] Object Fit
-- [ ] Object Position
-- [ ] Overflow
-- [ ] Overscroll Behavior
-- [ ] Position
-- [ ] Top / Right / Bottom / Left
-- [ ] Visibility
-- [ ] Z-Index
+- [ ] [Container](https://tailwindcss.com/docs/container)
+- [ ] [Box Decoration Break](https://tailwindcss.com/docs/box-decoration-break)
+- [ ] [Box Sizing](https://tailwindcss.com/docs/box-sizing)
+- [ ] [Display](https://tailwindcss.com/docs/display)
+- [ ] [Floats](https://tailwindcss.com/docs/floats)
+- [ ] [Clear](https://tailwindcss.com/docs/clear)
+- [ ] [Isolation](https://tailwindcss.com/docs/isolation)
+- [ ] [Object Fit](https://tailwindcss.com/docs/object-fit)
+- [ ] [Object Position](https://tailwindcss.com/docs/object-position)
+- [ ] [Overflow](https://tailwindcss.com/docs/overflow)
+- [ ] [Overscroll Behavior](https://tailwindcss.com/docs/overscroll-behavior)
+- [ ] [Position](https://tailwindcss.com/docs/position)
+- [ ] [Top / Right / Bottom / Left](https://tailwindcss.com/docs/top-right-bottom-left)
+- [ ] [Visibility](https://tailwindcss.com/docs/visibility)
+- [ ] [Z-Index](https://tailwindcss.com/docs/z-index)
 
 ### FLEXBOX
 
-- [ ] Flex Direction
-- [ ] Flex Wrap
-- [ ] Flex
-- [ ] Flex Grow
-- [ ] Flex Shrink
-- [ ] Order
+- [ ] [Flex Direction](https://tailwindcss.com/docs/flex-direction)
+- [ ] [Flex Wrap](https://tailwindcss.com/docs/flex-wrap)
+- [ ] [Flex](https://tailwindcss.com/docs/flex)
+- [ ] [Flex Grow](https://tailwindcss.com/docs/flex-grow)
+- [ ] [Flex Shrink](https://tailwindcss.com/docs/flex-shrink)
+- [ ] [Order](https://tailwindcss.com/docs/order)
 
 ### GRID
 
-- [ ] Grid Template Columns
-- [ ] Grid Column Start / End
-- [ ] Grid Template Rows
-- [ ] Grid Row Start / End
-- [ ] Grid Auto Flow
-- [ ] Grid Auto Columns
-- [ ] Grid Auto Rows
-- [ ] Gap
+- [ ] [Grid Template Columns](https://tailwindcss.com/docs/grid-template-columns)
+- [ ] [Grid Column Start / End](https://tailwindcss.com/docs/grid-column)
+- [ ] [Grid Template Rows](https://tailwindcss.com/docs/grid-template-rows)
+- [ ] [Grid Row Start / End](https://tailwindcss.com/docs/grid-row)
+- [ ] [Grid Auto Flow](https://tailwindcss.com/docs/grid-auto-flow)
+- [ ] [Grid Auto Columns](https://tailwindcss.com/docs/grid-auto-columns)
+- [ ] [Grid Auto Rows](https://tailwindcss.com/docs/grid-auto-rows)
+- [ ] [Gap](https://tailwindcss.com/docs/gap)
 
 ### BOX ALIGNMENT
 
-- [ ] Justify Content
-- [ ] Justify Items
-- [ ] Justify Self
-- [ ] Align Content
+- [ ] [Justify Content](https://tailwindcss.com/docs/justify-content)
+- [ ] [Justify Items](https://tailwindcss.com/docs/justify-items)
+- [ ] [Justify Self](https://tailwindcss.com/docs/justify-self)
+- [ ] [Align Content](https://tailwindcss.com/docs/align-content)
 - [ ] Align Items
 - [ ] Align Self
 - [ ] Place Content
