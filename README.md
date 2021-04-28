@@ -97,7 +97,7 @@ A description of this package.
 
 - [ ] [Background Attachment](https://tailwindcss.com/docs/background-attachment)
 - [ ] [Background Clip](https://tailwindcss.com/docs/background-clip)
-- [ ] [Background Color](https://tailwindcss.com/docs/background-color)
+- [x] [Background Color](https://tailwindcss.com/docs/background-color)
 - [ ] [Background Opacity](https://tailwindcss.com/docs/background-opacity)
 - [ ] [Background Position](https://tailwindcss.com/docs/background-position)
 - [ ] [Background Repeat](https://tailwindcss.com/docs/background-repeat)
