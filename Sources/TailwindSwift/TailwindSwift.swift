@@ -80,7 +80,8 @@ extension TailwindStyle {
     public struct Sizing {
         var width: Tailwind.Width?
         var height: Tailwind.Height?
-        public init(width: Tailwind.Width? = nil, height: Tailwind.Height? = nil) {
+        public init(width: Tailwind.Width? = nil,
+                    height: Tailwind.Height? = nil) {
             self.width = width
             self.height = height
         }
@@ -93,7 +94,8 @@ extension TailwindStyle {
     public struct Spacing {
         var padding: Tailwind.Padding?
         var margin: Tailwind.Margin?
-        public init(padding: Tailwind.Padding? = nil, margin: Tailwind.Margin? = nil) {
+        public init(padding: Tailwind.Padding? = nil,
+                    margin: Tailwind.Margin? = nil) {
             self.padding = padding
             self.margin = margin
         }
@@ -119,12 +121,15 @@ extension TailwindStyle {
 // MARK: - Borders
 
 extension TailwindStyle {
+    
     public struct Border {
         public init() {}
     }
+    
     public struct Divide {
         public init() {}
     }
+    
     public struct Ring {
         public init() {}
     }
