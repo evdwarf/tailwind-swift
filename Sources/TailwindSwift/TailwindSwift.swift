@@ -114,7 +114,10 @@ extension TailwindStyle {
 
 extension TailwindStyle {
     public struct Background {
-        public init() {}
+        var color: Tailwind.BackgroundColor?
+        public init(color: Tailwind.BackgroundColor? = nil) {
+            self.color = color
+        }
     }
 }
 
