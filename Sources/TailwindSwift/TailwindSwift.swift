@@ -26,7 +26,7 @@ public struct TailwindStyle: TailwindValue {
     public var grid         = Grid()
     public var boxAlignment = BoxAlignment()
     public var sizing       = Sizing()
-    public var spacing      = Spacing()
+    public var spacing      = Spacing.init()
     public var typography   = Typography()
     public var background   = Background()
     public var border       = Border()
@@ -111,8 +111,8 @@ extension TailwindStyle {
     public struct Spacing {
         public var padding: Array<Tailwind.Padding>
         public var margin: Array<Tailwind.Margin>
-        public init(padding: Tailwind.Padding...,
-                    margin: Tailwind.Margin...) {
+        public init(padding: Array<Tailwind.Padding> = [],
+                    margin: Array<Tailwind.Margin> = []) {
             self.padding = padding
             self.margin = margin
         }
