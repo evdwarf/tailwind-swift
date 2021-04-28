@@ -1,5 +1,5 @@
 //
-//  BackGroundColor.swift
+//  BackgroundColor.swift
 //  TailwindSwift
 //
 //  Created by dodocha169 on 2021/04/28.
