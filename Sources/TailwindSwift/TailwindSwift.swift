@@ -11,10 +11,8 @@ public struct TailwindStyle: TailwindValue {
         let styles: Array<TailwindValue?> = [
             sizing.height,
             sizing.width,
-            spacing.margin,
-            spacing.padding,
             background.color,
-        ]
+        ] + spacing.margin + spacing.padding
         return styles.compactMap { value in
             guard let v = value else {
                 return nil
@@ -111,10 +109,10 @@ extension TailwindStyle {
 
 extension TailwindStyle {
     public struct Spacing {
-        public var padding: Tailwind.Padding?
-        public var margin: Tailwind.Margin?
-        public init(padding: Tailwind.Padding? = nil,
-                    margin: Tailwind.Margin? = nil) {
+        public var padding: Array<Tailwind.Padding>
+        public var margin: Array<Tailwind.Margin>
+        public init(padding: Tailwind.Padding...,
+                    margin: Tailwind.Margin...) {
             self.padding = padding
             self.margin = margin
         }
