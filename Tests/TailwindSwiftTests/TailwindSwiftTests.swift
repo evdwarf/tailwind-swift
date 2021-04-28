@@ -3,12 +3,11 @@ import XCTest
 
 final class TailwindSwiftTests: XCTestCase {
     func testExample() {
-        XCTAssertEqual(Tailwind.Height.n(0)
-                        .tailwindValue, "h-0")
-        XCTAssertEqual(Tailwind.Height.n(0.5)
-                        .tailwindValue, "h-0.5")
-        XCTAssertEqual(Tailwind.Height.div(x: 1, y: 3)
-                        .tailwindValue, "h-1/3")
+        var style = TailwindStyle.init()
+        style.background.color = .black
+        style.sizing.height = .auto
+        style.sizing.width = .max
+        XCTAssertEqual(style.tailwindValue, "h-auto w-max bg-black")
     }
 
     static var allTests = [

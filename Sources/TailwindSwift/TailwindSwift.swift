@@ -54,6 +54,7 @@ public struct TailwindStyle: TailwindValue {
         self.sizing       = sizing
         self.spacing      = spacing
         self.typography   = typography
+        self.background   = background
         self.border       = border
         self.divide       = divide
         self.ring         = ring
