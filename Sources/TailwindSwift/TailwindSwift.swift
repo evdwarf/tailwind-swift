@@ -5,7 +5,23 @@ public protocol TailwindValue {
     var tailwindValue: String { get }
 }
 
-public struct TailwindStyle {
+public struct TailwindStyle: TailwindValue {
+    
+    public var tailwindValue: String {
+        let styles: Array<TailwindValue?> = [
+            sizing.height,
+            sizing.width,
+            spacing.margin,
+            spacing.padding,
+            background.color,
+        ]
+        return styles.compactMap { value in
+            guard let v = value else {
+                return nil
+            }
+            return v.tailwindValue
+        }.joined(separator: " ")
+    }
     
     public var layout       = Layout()
     public var flexbox      = Flexbox()
@@ -14,6 +30,7 @@ public struct TailwindStyle {
     public var sizing       = Sizing()
     public var spacing      = Spacing()
     public var typography   = Typography()
+    public var background   = Background()
     public var border       = Border()
     public var divide       = Divide()
     public var ring         = Ring()
@@ -25,6 +42,7 @@ public struct TailwindStyle {
                 sizing:         Sizing          = .init(),
                 spacing:        Spacing         = .init(),
                 typography:     Typography      = .init(),
+                background:     Background      = .init(),
                 border:         Border          = .init(),
                 divide:         Divide          = .init(),
                 ring:           Ring            = .init())
@@ -78,8 +96,8 @@ extension TailwindStyle {
 
 extension TailwindStyle {
     public struct Sizing {
-        var width: Tailwind.Width?
-        var height: Tailwind.Height?
+        public var width: Tailwind.Width?
+        public var height: Tailwind.Height?
         public init(width: Tailwind.Width? = nil,
                     height: Tailwind.Height? = nil) {
             self.width = width
@@ -92,8 +110,8 @@ extension TailwindStyle {
 
 extension TailwindStyle {
     public struct Spacing {
-        var padding: Tailwind.Padding?
-        var margin: Tailwind.Margin?
+        public var padding: Tailwind.Padding?
+        public var margin: Tailwind.Margin?
         public init(padding: Tailwind.Padding? = nil,
                     margin: Tailwind.Margin? = nil) {
             self.padding = padding
@@ -114,7 +132,7 @@ extension TailwindStyle {
 
 extension TailwindStyle {
     public struct Background {
-        var color: Tailwind.BackgroundColor?
+        public var color: Tailwind.BackgroundColor?
         public init(color: Tailwind.BackgroundColor? = nil) {
             self.color = color
         }
