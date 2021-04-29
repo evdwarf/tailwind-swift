@@ -24,11 +24,11 @@ A description of this package.
 
 ### FLEXBOX
 
-- [ ] [Flex Direction](https://tailwindcss.com/docs/flex-direction)
-- [ ] [Flex Wrap](https://tailwindcss.com/docs/flex-wrap)
-- [ ] [Flex](https://tailwindcss.com/docs/flex)
-- [ ] [Flex Grow](https://tailwindcss.com/docs/flex-grow)
-- [ ] [Flex Shrink](https://tailwindcss.com/docs/flex-shrink)
+- [x] [Flex Direction](https://tailwindcss.com/docs/flex-direction)
+- [x] [Flex Wrap](https://tailwindcss.com/docs/flex-wrap)
+- [x] [Flex](https://tailwindcss.com/docs/flex)
+- [x] [Flex Grow](https://tailwindcss.com/docs/flex-grow)
+- [x] [Flex Shrink](https://tailwindcss.com/docs/flex-shrink)
 - [ ] [Order](https://tailwindcss.com/docs/order)
 
 ### GRID
