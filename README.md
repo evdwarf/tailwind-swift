@@ -29,7 +29,7 @@ A description of this package.
 - [x] [Flex](https://tailwindcss.com/docs/flex)
 - [x] [Flex Grow](https://tailwindcss.com/docs/flex-grow)
 - [x] [Flex Shrink](https://tailwindcss.com/docs/flex-shrink)
-- [ ] [Order](https://tailwindcss.com/docs/order)
+- [x] [Order](https://tailwindcss.com/docs/order)
 
 ### GRID
 
@@ -44,15 +44,15 @@ A description of this package.
 
 ### BOX ALIGNMENT
 
-- [ ] [Justify Content](https://tailwindcss.com/docs/justify-content)
-- [ ] [Justify Items](https://tailwindcss.com/docs/justify-items)
-- [ ] [Justify Self](https://tailwindcss.com/docs/justify-self)
-- [ ] [Align Content](https://tailwindcss.com/docs/align-content)
-- [ ] [Align Items](https://tailwindcss.com/docs/align-items)
-- [ ] [Align Self](https://tailwindcss.com/docs/align-self)
-- [ ] [Place Content](https://tailwindcss.com/docs/place-content)
-- [ ] [Place Items](https://tailwindcss.com/docs/place-items)
-- [ ] [Place Self](https://tailwindcss.com/docs/place-self)
+- [x] [Justify Content](https://tailwindcss.com/docs/justify-content)
+- [x] [Justify Items](https://tailwindcss.com/docs/justify-items)
+- [x] [Justify Self](https://tailwindcss.com/docs/justify-self)
+- [x] [Align Content](https://tailwindcss.com/docs/align-content)
+- [x] [Align Items](https://tailwindcss.com/docs/align-items)
+- [x] [Align Self](https://tailwindcss.com/docs/align-self)
+- [x] [Place Content](https://tailwindcss.com/docs/place-content)
+- [x] [Place Items](https://tailwindcss.com/docs/place-items)
+- [x] [Place Self](https://tailwindcss.com/docs/place-self)
 
 ### SPACING
 
