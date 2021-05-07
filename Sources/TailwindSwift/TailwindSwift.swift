@@ -26,7 +26,7 @@ public struct TailwindStyle: TailwindValue {
     public var grid         = Grid()
     public var boxAlignment = BoxAlignment()
     public var sizing       = Sizing()
-    public var spacing      = Spacing.init()
+    public var spacing      = Spacing()
     public var typography   = Typography()
     public var background   = Background()
     public var border       = Border()
@@ -71,7 +71,25 @@ extension TailwindStyle {
 
 extension TailwindStyle {
     public struct Flexbox {
-        public init() {}
+        public var direction: Tailwind.FlexDirection?
+        public var wrap: Tailwind.FlexWrap?
+        public var grow: Tailwind.FlexGrow?
+        public var shrink: Tailwind.FlexShrink?
+        public var flex: Tailwind.Flex?
+        public var order: Tailwind.Order?
+        public init(direction: Tailwind.FlexDirection? = nil,
+                    wrap: Tailwind.FlexWrap? = nil,
+                    grow: Tailwind.FlexGrow? = nil,
+                    shrink: Tailwind.FlexShrink? = nil,
+                    flex: Tailwind.Flex? = nil,
+                    order:Tailwind.Order? = nil) {
+            self.direction = direction
+            self.wrap = wrap
+            self.grow = grow
+            self.shrink = shrink
+            self.flex = flex
+            self.order = order
+        }
     }
 }
 
@@ -87,7 +105,35 @@ extension TailwindStyle {
 
 extension TailwindStyle {
     public struct BoxAlignment {
-        public init() {}
+        public var justifyContent: Tailwind.JustifyContent?
+        public var justifyItems: Tailwind.JustifyItems?
+        public var justifySelf: Tailwind.JustifySelf?
+        public var alignContent: Tailwind.AlignContent?
+        public var alignItems: Tailwind.AlignItems?
+        public var alignSelf: Tailwind.AlignSelf?
+        public var placeContnet: Tailwind.PlaceContent?
+        public var placeItems: Tailwind.PlaceItems?
+        public var placeSelf: Tailwind.PlaceSelf?
+        public init(justifyContent: Tailwind.JustifyContent? = nil,
+                    justifyItems: Tailwind.JustifyItems? = nil,
+                    justifySelf: Tailwind.JustifySelf? = nil,
+                    alignContent: Tailwind.AlignContent? = nil,
+                    alignItems: Tailwind.AlignItems? = nil,
+                    alignSelf: Tailwind.AlignSelf? = nil,
+                    placeContent: Tailwind.PlaceContent? = nil,
+                    placeItems: Tailwind.PlaceItems? = nil,
+                    placeSelf: Tailwind.PlaceSelf? = nil) {
+            self.justifyContent = justifyContent
+            self.justifyItems = justifyItems
+            self.justifySelf = justifySelf
+            self.alignContent = alignContent
+            self.alignItems = alignItems
+            self.alignSelf = alignSelf
+            self.placeContnet = placeContent
+            self.placeItems = placeItems
+            self.placeSelf = placeSelf
+            
+        }
     }
 }
 
