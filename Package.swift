@@ -18,9 +18,6 @@ let package = Package(
         .package(name: "Closswift",
                  url: "https://github.com/evdwarf/closswift",
                  from: "0.0.1"),
-        .package(name: "TailwindSwift",
-                 url: "https://github.com/evdwarf/tailwind-swift",
-                 from: "0.0.2"),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -30,7 +27,6 @@ let package = Package(
             dependencies: [
                 "TokamakHTMLFunctionBuilder",
                 "Closswift",
-                "TailwindSwift"
             ]),
         .testTarget(
             name: "TailwindSwiftTests",

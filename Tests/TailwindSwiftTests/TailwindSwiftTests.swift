@@ -7,7 +7,7 @@ final class TailwindSwiftTests: XCTestCase {
         style.background.color = .black
         style.sizing.height = .auto
         style.sizing.width = .max
-        XCTAssertEqual(style.tailwindValue, "h-auto w-max bg-black")
+        XCTAssertEqual(style.tailwindValue, "w-max h-auto bg-black")
     }
 
     static var allTests = [

@@ -5,35 +5,32 @@ public protocol TailwindValue {
     var tailwindValue: String { get }
 }
 
+public protocol TailwindCategory {
+    var tailwindValues: Array<TailwindValue?> { get }
+}
+
 public struct TailwindStyle: TailwindValue {
     
     public var tailwindValue: String {
-        let styles: Array<TailwindValue?> = [
-            sizing.height,
-            sizing.width,
-            background.color,
-            flexbox.direction,
-            flexbox.flex,
-            flexbox.grow,
-            flexbox.order,
-            flexbox.shrink,
-            flexbox.wrap,
-            boxAlignment.justifyContent,
-            boxAlignment.justifyItems,
-            boxAlignment.justifySelf,
-            boxAlignment.alignContent,
-            boxAlignment.alignItems,
-            boxAlignment.alignSelf,
-            boxAlignment.placeContnet,
-            boxAlignment.placeSelf,
-            boxAlignment.placeItems
-        ] + spacing.margin + spacing.padding
-        return styles.compactMap { value in
-            guard let v = value else {
-                return nil
-            }
-            return v.tailwindValue
-        }.joined(separator: " ")
+        let categories: Array<TailwindCategory> = [
+            layout,
+            flexbox,
+            grid,
+            boxAlignment,
+            sizing,
+            spacing,
+            typography,
+            background,
+            border,
+            divide,
+            ring
+        ]
+        return categories.compactMap({ category in
+            category.tailwindValues.compactMap({ $0 })
+        })
+        .flatMap({ $0 })
+        .map({ $0.tailwindValue })
+        .joined(separator: " ")
     }
     
     public var layout       = Layout()
@@ -77,7 +74,10 @@ public struct TailwindStyle: TailwindValue {
 // MARK: - Layout
 
 extension TailwindStyle {
-    public struct Layout {
+    public struct Layout: TailwindCategory {
+        public var tailwindValues: Array<TailwindValue?> {
+            []
+        }
         public init() {}
     }
 }
@@ -85,7 +85,17 @@ extension TailwindStyle {
 // MARK: - Flexbox
 
 extension TailwindStyle {
-    public struct Flexbox {
+    public struct Flexbox: TailwindCategory {
+        public var tailwindValues: Array<TailwindValue?> {
+            [
+                direction,
+                wrap,
+                grow,
+                shrink,
+                flex,
+                order
+            ]
+        }
         public var direction: Tailwind.FlexDirection?
         public var wrap: Tailwind.FlexWrap?
         public var grow: Tailwind.FlexGrow?
@@ -111,7 +121,10 @@ extension TailwindStyle {
 // MARK: - Grid
 
 extension TailwindStyle {
-    public struct Grid {
+    public struct Grid: TailwindCategory {
+        public var tailwindValues: Array<TailwindValue?> {
+            []
+        }
         public init() {}
     }
 }
@@ -119,7 +132,20 @@ extension TailwindStyle {
 // MARK: - Box Alignment
 
 extension TailwindStyle {
-    public struct BoxAlignment {
+    public struct BoxAlignment: TailwindCategory {
+        public var tailwindValues: Array<TailwindValue?> {
+            [
+                justifyContent,
+                justifyItems,
+                justifySelf,
+                alignContent,
+                alignItems,
+                alignSelf,
+                placeContnet,
+                placeItems,
+                placeSelf
+            ]
+        }
         public var justifyContent: Tailwind.JustifyContent?
         public var justifyItems: Tailwind.JustifyItems?
         public var justifySelf: Tailwind.JustifySelf?
@@ -147,7 +173,6 @@ extension TailwindStyle {
             self.placeContnet = placeContent
             self.placeItems = placeItems
             self.placeSelf = placeSelf
-            
         }
     }
 }
@@ -155,7 +180,13 @@ extension TailwindStyle {
 // MARK: - Sizing
 
 extension TailwindStyle {
-    public struct Sizing {
+    public struct Sizing: TailwindCategory {
+        public var tailwindValues: Array<TailwindValue?> {
+            [
+                width,
+                height
+            ]
+        }
         public var width: Tailwind.Width?
         public var height: Tailwind.Height?
         public init(width: Tailwind.Width? = nil,
@@ -169,7 +200,10 @@ extension TailwindStyle {
 // MARK: - Spacing
 
 extension TailwindStyle {
-    public struct Spacing {
+    public struct Spacing: TailwindCategory {
+        public var tailwindValues: Array<TailwindValue?> {
+            padding + margin
+        }
         public var padding: Array<Tailwind.Padding>
         public var margin: Array<Tailwind.Margin>
         public init(padding: Array<Tailwind.Padding> = [],
@@ -183,7 +217,10 @@ extension TailwindStyle {
 // MARK: - Typography
 
 extension TailwindStyle {
-    public struct Typography {
+    public struct Typography: TailwindCategory {
+        public var tailwindValues: Array<TailwindValue?> {
+            []
+        }
         public init() {}
     }
 }
@@ -191,7 +228,10 @@ extension TailwindStyle {
 // MARK: - Backgrounds
 
 extension TailwindStyle {
-    public struct Background {
+    public struct Background : TailwindCategory {
+        public var tailwindValues: Array<TailwindValue?> {
+            [color]
+        }
         public var color: Tailwind.BackgroundColor?
         public init(color: Tailwind.BackgroundColor? = nil) {
             self.color = color
@@ -203,15 +243,24 @@ extension TailwindStyle {
 
 extension TailwindStyle {
     
-    public struct Border {
+    public struct Border : TailwindCategory {
+        public var tailwindValues: Array<TailwindValue?> {
+            []
+        }
         public init() {}
     }
     
-    public struct Divide {
+    public struct Divide : TailwindCategory {
+        public var tailwindValues: Array<TailwindValue?> {
+            []
+        }
         public init() {}
     }
     
-    public struct Ring {
+    public struct Ring : TailwindCategory {
+        public var tailwindValues: Array<TailwindValue?> {
+            []
+        }
         public init() {}
     }
 }
