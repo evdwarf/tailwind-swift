@@ -12,6 +12,21 @@ public struct TailwindStyle: TailwindValue {
             sizing.height,
             sizing.width,
             background.color,
+            flexbox.direction,
+            flexbox.flex,
+            flexbox.grow,
+            flexbox.order,
+            flexbox.shrink,
+            flexbox.wrap,
+            boxAlignment.justifyContent,
+            boxAlignment.justifyItems,
+            boxAlignment.justifySelf,
+            boxAlignment.alignContent,
+            boxAlignment.alignItems,
+            boxAlignment.alignSelf,
+            boxAlignment.placeContnet,
+            boxAlignment.placeSelf,
+            boxAlignment.placeItems
         ] + spacing.margin + spacing.padding
         return styles.compactMap { value in
             guard let v = value else {
