@@ -219,9 +219,29 @@ extension TailwindStyle {
 extension TailwindStyle {
     public struct Typography: TailwindCategory {
         public var tailwindValues: Array<TailwindValue?> {
-            []
+            [
+           
+            ]
         }
-        public init() {}
+        public var fontFamily : Tailwind.FontFamily?
+        public var fontSize: Tailwind.FontSize?
+        public var fontStyle: Tailwind.FontStyle?
+        public var fontSmoothing: Tailwind.FontSmoothing?
+        public var fontWeight: Tailwind.FontWeight?
+        public var fontVariantNumeric: Tailwind.FontVariantNumeric?
+        public init(fontFamily: Tailwind.FontFamily? = nil,
+                    fontSize: Tailwind.FontSize? = nil,
+                    fontStyle: Tailwind.FontStyle? = nil,
+                    fontSmoothing: Tailwind.FontSmoothing? = nil,
+                    fontWeight: Tailwind.FontWeight? = nil,
+                    fontVariantNumeric: Tailwind.FontVariantNumeric? = nil) {
+            self.fontFamily = fontFamily
+            self.fontSize = fontSize
+            self.fontStyle = fontStyle
+            self.fontSmoothing = fontSmoothing
+            self.fontWeight = fontWeight
+            self.fontVariantNumeric = fontVariantNumeric
+        }
     }
 }
 
