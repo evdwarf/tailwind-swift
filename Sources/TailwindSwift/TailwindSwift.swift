@@ -220,7 +220,12 @@ extension TailwindStyle {
     public struct Typography: TailwindCategory {
         public var tailwindValues: Array<TailwindValue?> {
             [
-           
+                fontFamily,
+                fontSize,
+                fontStyle,
+                fontSmoothing,
+                fontWeight,
+                fontVariantNumeric
             ]
         }
         public var fontFamily : Tailwind.FontFamily?
