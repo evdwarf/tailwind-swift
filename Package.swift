@@ -16,7 +16,7 @@ let package = Package(
                  url:"https://github.com/evdwarf/tokamak-html-function-builder",
                  from: "0.0.4"),
         .package(name: "Closswift",
-                 url: "https://github.com/evdwarf/closswift",
+                 url: "https://github.com/qigyu/closswift",
                  from: "0.0.1"),
     ],
     targets: [
