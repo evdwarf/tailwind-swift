@@ -33,14 +33,14 @@ A description of this package.
 
 ### GRID
 
-- [ ] [Grid Template Columns](https://tailwindcss.com/docs/grid-template-columns)
-- [ ] [Grid Column Start / End](https://tailwindcss.com/docs/grid-column)
-- [ ] [Grid Template Rows](https://tailwindcss.com/docs/grid-template-rows)
-- [ ] [Grid Row Start / End](https://tailwindcss.com/docs/grid-row)
-- [ ] [Grid Auto Flow](https://tailwindcss.com/docs/grid-auto-flow)
-- [ ] [Grid Auto Columns](https://tailwindcss.com/docs/grid-auto-columns)
-- [ ] [Grid Auto Rows](https://tailwindcss.com/docs/grid-auto-rows)
-- [ ] [Gap](https://tailwindcss.com/docs/gap)
+- [x] [Grid Template Columns](https://tailwindcss.com/docs/grid-template-columns)
+- [x] [Grid Column Start / End](https://tailwindcss.com/docs/grid-column)
+- [x] [Grid Template Rows](https://tailwindcss.com/docs/grid-template-rows)
+- [x] [Grid Row Start / End](https://tailwindcss.com/docs/grid-row)
+- [x] [Grid Auto Flow](https://tailwindcss.com/docs/grid-auto-flow)
+- [x] [Grid Auto Columns](https://tailwindcss.com/docs/grid-auto-columns)
+- [x] [Grid Auto Rows](https://tailwindcss.com/docs/grid-auto-rows)
+- [x] [Gap](https://tailwindcss.com/docs/gap)
 
 ### BOX ALIGNMENT
 
