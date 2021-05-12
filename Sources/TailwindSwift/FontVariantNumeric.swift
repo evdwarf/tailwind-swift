@@ -11,35 +11,35 @@ public extension Tailwind {
     
     enum FontVariantNumeric: TailwindValue {
         typealias RawValue = String
-        case normalnums
+        case normalNums
         case ordinal
-        case slashedzero
-        case liningnums
-        case oldstylenums
-        case proportionalnums
-        case tabularnums
-        case diagonalfractions
-        case stackedfractions
+        case slashedZero
+        case liningNums
+        case oldstyleNums
+        case proportionalNums
+        case tabularNums
+        case diagonalFractions
+        case stackedFractions
         
         var rawValue: RawValue {
             switch self {
-            case .normalnums:
+            case .normalNums:
                 return "normal-nums"
             case .ordinal:
                 return "ordinal"
-            case .slashedzero:
+            case .slashedZero:
                 return "slashed-zero"
-            case .liningnums:
+            case .liningNums:
                 return "lining-nums"
-            case .oldstylenums:
+            case .oldstyleNums:
                 return "oldstyle-nums"
-            case .proportionalnums:
+            case .proportionalNums:
                 return "proportional-nums"
-            case .tabularnums:
+            case .tabularNums:
                 return "tabular-nums"
-            case .diagonalfractions:
+            case .diagonalFractions:
                 return "diagonal-fractions"
-            case .stackedfractions:
+            case .stackedFractions:
                 return "stacked-fractions"
             }
         }

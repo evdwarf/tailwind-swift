@@ -12,13 +12,13 @@ public extension Tailwind {
     enum FontSmoothing: TailwindValue {
         typealias RawValue = String
         case antialiased
-        case subpixelantialiased
+        case subpixelAntialiased
         
         var rawValue: RawValue {
             switch self {
             case .antialiased:
                 return "antialiased"
-            case .subpixelantialiased:
+            case .subpixelAntialiased:
                 return "subpixel-antialiased"
             }
         }

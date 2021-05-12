@@ -123,9 +123,42 @@ extension TailwindStyle {
 extension TailwindStyle {
     public struct Grid: TailwindCategory {
         public var tailwindValues: Array<TailwindValue?> {
-            []
+            [
+                gridTemplateColumns,
+                gridTemplateRows,
+                gridColumnStartOrEnd,
+                gridRowStartOrEnd,
+                gridAutoFlow,
+                gridAutoRows,
+                gridAutoColumns,
+                gap
+            ]
         }
-        public init() {}
+        public var gridTemplateColumns: Tailwind.GridTemplateColumns?
+        public var gridTemplateRows: Tailwind.GridTemplateRows?
+        public var gridColumnStartOrEnd: Tailwind.GridColumnStartOrEnd?
+        public var gridRowStartOrEnd: Tailwind.GridRowStartOrEnd?
+        public var gridAutoFlow: Tailwind.GridAutoFlow?
+        public var gridAutoColumns: Tailwind.GridAutoColumns?
+        public var gridAutoRows: Tailwind.GridAutoRows?
+        public var gap: Tailwind.Gap?
+        public init(gridTemplateColumns: Tailwind.GridTemplateColumns? = nil,
+                    gridTemplateRows: Tailwind.GridTemplateRows? = nil,
+                    gridColumnStartOrEnd: Tailwind.GridColumnStartOrEnd? = nil,
+                    gridRowStartOrEnd: Tailwind.GridRowStartOrEnd? = nil,
+                    gridAutoFlow: Tailwind.GridAutoFlow? = nil,
+                    gridAutoColumns: Tailwind.GridAutoColumns? = nil,
+                    gridAutoRows: Tailwind.GridAutoRows? = nil,
+                    gap:Tailwind.Gap? = nil) {
+            self.gridTemplateColumns = gridTemplateColumns
+            self.gridTemplateRows = gridTemplateRows
+            self.gridColumnStartOrEnd = gridColumnStartOrEnd
+            self.gridRowStartOrEnd = gridRowStartOrEnd
+            self.gridAutoFlow = gridAutoFlow
+            self.gridAutoColumns = gridAutoColumns
+            self.gridAutoRows = gridAutoRows
+            self.gap = gap
+        }
     }
 }
 

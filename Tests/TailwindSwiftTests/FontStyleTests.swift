@@ -2,7 +2,7 @@
 //  FontStyleTests.swift
 //  TailwindSwift
 //
-//  Created by 本寺俊介 on 2021/05/11.
+//  Created by dodocha169 on 2021/05/11.
 //
 
 import XCTest
@@ -15,7 +15,7 @@ final class FontStyleTests: XCTestCase {
                         .tailwindValue, "italic")
     }
     func testNotItalic(){
-        XCTAssertEqual(Tailwind.FontStyle.notitalic
+        XCTAssertEqual(Tailwind.FontStyle.notItalic
                         .tailwindValue, "not-italic")
     }
     

@@ -71,12 +71,12 @@ A description of this package.
 
 ### TYPOGRAPHY
 
-- [ ] [Font Family](https://tailwindcss.com/docs/font-family)
-- [ ] [Font Size](https://tailwindcss.com/docs/font-size)
-- [ ] [Font Smoothing](https://tailwindcss.com/docs/font-smoothing)
-- [ ] [Font Style](https://tailwindcss.com/docs/font-style)
-- [ ] [Font Weight](https://tailwindcss.com/docs/font-weight)
-- [ ] [Font Variant Numeric](https://tailwindcss.com/docs/font-variant-numeric)
+- [x] [Font Family](https://tailwindcss.com/docs/font-family)
+- [x] [Font Size](https://tailwindcss.com/docs/font-size)
+- [x] [Font Smoothing](https://tailwindcss.com/docs/font-smoothing)
+- [x] [Font Style](https://tailwindcss.com/docs/font-style)
+- [x] [Font Weight](https://tailwindcss.com/docs/font-weight)
+- [x] [Font Variant Numeric](https://tailwindcss.com/docs/font-variant-numeric)
 - [ ] [Letter Spacing](https://tailwindcss.com/docs/letter-spacing)
 - [ ] [Line Height](https://tailwindcss.com/docs/line-height)
 - [ ] [List Style Type](https://tailwindcss.com/docs/list-style-type)

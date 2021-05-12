@@ -13,13 +13,13 @@ public extension Tailwind {
     enum FontStyle: TailwindValue {
         typealias RawValue = String
         case italic
-        case notitalic
+        case notItalic
         
         var rawValue: RawValue {
             switch self {
             case .italic:
                 return "italic"
-            case .notitalic:
+            case .notItalic:
                 return "not-italic"
             }
         }

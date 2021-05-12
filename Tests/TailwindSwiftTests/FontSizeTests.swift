@@ -11,29 +11,29 @@ import XCTest
 final class FontSizeTests: XCTestCase {
     
     func testNumber() {
-        XCTAssertEqual(Tailwind.Fontsize.number(5)
+        XCTAssertEqual(Tailwind.FontSize.number(5)
                         .tailwindValue, "text-5xl")
-        XCTAssertEqual(Tailwind.Fontsize.number(11)
+        XCTAssertEqual(Tailwind.FontSize.number(11)
                         .tailwindValue, "text-xl")
     }
     func testXs() {
-        XCTAssertEqual(Tailwind.Fontsize.xs
+        XCTAssertEqual(Tailwind.FontSize.xs
                         .tailwindValue, "text-xs")
     }
     func testSm() {
-        XCTAssertEqual(Tailwind.Fontsize.xs
+        XCTAssertEqual(Tailwind.FontSize.xs
                         .tailwindValue, "text-xs")
     }
     func testBase(){
-        XCTAssertEqual(Tailwind.Fontsize.base
+        XCTAssertEqual(Tailwind.FontSize.base
                         .tailwindValue, "text-base")
     }
     func testLg(){
-        XCTAssertEqual(Tailwind.Fontsize.lg
+        XCTAssertEqual(Tailwind.FontSize.lg
                         .tailwindValue, "text-lg")
     }
     func testXl(){
-        XCTAssertEqual(Tailwind.Fontsize.xl
+        XCTAssertEqual(Tailwind.FontSize.xl
                         .tailwindValue, "text-xl")
     }
 }

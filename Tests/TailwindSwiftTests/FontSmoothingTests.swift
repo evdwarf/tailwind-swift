@@ -15,7 +15,7 @@ final class FontSmoothingTests: XCTestCase {
                         .tailwindValue, "antialiased")
     }
     func testSubpixelAntialiased(){
-        XCTAssertEqual(Tailwind.FontSmoothing.subpixelantialiased
+        XCTAssertEqual(Tailwind.FontSmoothing.subpixelAntialiased
                         .tailwindValue, "subpixel-antialiased")
     }
     

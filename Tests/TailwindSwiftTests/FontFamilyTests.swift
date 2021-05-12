@@ -2,7 +2,7 @@
 //  FontFamilyTests.swift
 //  TailwindSwift
 //
-//  Created by 本寺俊介 on 2021/05/11.
+//  Created by dodocha169 on 2021/05/11.
 //
 
 import XCTest
