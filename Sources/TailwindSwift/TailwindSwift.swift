@@ -258,7 +258,16 @@ extension TailwindStyle {
                 fontStyle,
                 fontSmoothing,
                 fontWeight,
-                fontVariantNumeric
+                fontVariantNumeric,
+                textAlign,
+                textColor,
+                textDecoration,
+                textOpacity,
+                textOverflow,
+                textTransform,
+                verticalAlign,
+                whitespace,
+                wordBreak
             ]
         }
         public var fontFamily : Tailwind.FontFamily?
@@ -267,18 +276,45 @@ extension TailwindStyle {
         public var fontSmoothing: Tailwind.FontSmoothing?
         public var fontWeight: Tailwind.FontWeight?
         public var fontVariantNumeric: Tailwind.FontVariantNumeric?
+        public var textAlign: Tailwind.TextAlign?
+        public var textColor: Tailwind.TextColor?
+        public var textDecoration: Tailwind.TextDecoration?
+        public var textOpacity: Tailwind.TextOpacity?
+        public var textOverflow: Tailwind.TextOverflow?
+        public var textTransform: Tailwind.TextTransform?
+        public var verticalAlign: Tailwind.VerticalAlign?
+        public var whitespace: Tailwind.Whitespace?
+        public var wordBreak: Tailwind.WordBreak?
         public init(fontFamily: Tailwind.FontFamily? = nil,
                     fontSize: Tailwind.FontSize? = nil,
                     fontStyle: Tailwind.FontStyle? = nil,
                     fontSmoothing: Tailwind.FontSmoothing? = nil,
                     fontWeight: Tailwind.FontWeight? = nil,
-                    fontVariantNumeric: Tailwind.FontVariantNumeric? = nil) {
+                    fontVariantNumeric: Tailwind.FontVariantNumeric? = nil,
+                    textAlign: Tailwind.TextAlign? = nil,
+                    textColor: Tailwind.TextColor? = nil,
+                    textDecoration: Tailwind.TextDecoration? = nil,
+                    textOpacity: Tailwind.TextOpacity? = nil,
+                    textOverflow: Tailwind.TextOverflow? = nil,
+                    textTransform: Tailwind.TextTransform? = nil,
+                    verticalAlign: Tailwind.VerticalAlign? = nil,
+                    whitespace: Tailwind.Whitespace? = nil,
+                    wordBreak: Tailwind.WordBreak? = nil) {
             self.fontFamily = fontFamily
             self.fontSize = fontSize
             self.fontStyle = fontStyle
             self.fontSmoothing = fontSmoothing
             self.fontWeight = fontWeight
             self.fontVariantNumeric = fontVariantNumeric
+            self.textAlign = textAlign
+            self.textColor = textColor
+            self.textDecoration = textDecoration
+            self.textOpacity = textOpacity
+            self.textOverflow = textOverflow
+            self.textTransform = textTransform
+            self.verticalAlign = verticalAlign
+            self.whitespace = whitespace
+            self.wordBreak = wordBreak
         }
     }
 }

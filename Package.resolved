@@ -3,7 +3,7 @@
     "pins": [
       {
         "package": "Closswift",
-        "repositoryURL": "https://github.com/evdwarf/closswift",
+        "repositoryURL": "https://github.com/qigyu/closswift",
         "state": {
           "branch": null,
           "revision": "b9a071b7619683645b3e054286a6a7184e3c7f24",
