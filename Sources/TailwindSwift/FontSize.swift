@@ -7,8 +7,6 @@
 
 import Foundation
 
-import Foundation
-
 public extension Tailwind {
     
     enum FontSize: TailwindValue {
@@ -27,7 +25,7 @@ public extension Tailwind {
                     // 2~9
                     return "text-\(n)xl"
                 } else {
-                    // none
+                    // xl
                     return "text-xl"
                 }
             case .xs:

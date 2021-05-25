@@ -53,7 +53,7 @@ public extension Tailwind {
                     // 1~7
                     return "row-end-\(n)"
                 } else {
-                    // none
+                    // auto
                     print("WARN: Index of out range: \(n)")
                     return "row-end-auto"
                 }

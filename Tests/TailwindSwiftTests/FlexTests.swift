@@ -15,7 +15,7 @@ final class FlexTests: XCTestCase {
         XCTAssertEqual(Tailwind.Flex.enable
                         .tailwindValue, "flex-1")
     }
-    func testRowDisable(){
+    func testDisable(){
         XCTAssertEqual(Tailwind.Flex.disable
                         .tailwindValue, "flex-none")
     }
