@@ -76,9 +76,38 @@ public struct TailwindStyle: TailwindValue {
 extension TailwindStyle {
     public struct Layout: TailwindCategory {
         public var tailwindValues: Array<TailwindValue?> {
-            []
+            [
+                boxSizing,
+                display,
+                floats,
+                clear,
+                isolation,
+                objectFit,
+                objectPosition
+            ]
         }
-        public init() {}
+        public var boxSizing: Tailwind.BoxSizing?
+        public var display: Tailwind.Display?
+        public var floats: Tailwind.Floats?
+        public var clear: Tailwind.Clear?
+        public var isolation: Tailwind.Isolation?
+        public var objectFit: Tailwind.ObjectFit?
+        public var objectPosition: Tailwind.ObjectPosition?
+        public init(boxSizing: Tailwind.BoxSizing? = nil,
+                    display: Tailwind.Display? = nil,
+                    floats: Tailwind.Floats? = nil,
+                    clear:Tailwind.Clear? = nil,
+                    isolation: Tailwind.Isolation? = nil,
+                    objectFit: Tailwind.ObjectFit? = nil,
+                    objectPosition: Tailwind.ObjectPosition? = nil) {
+            self.boxSizing = boxSizing
+            self.display = display
+            self.floats = floats
+            self.clear = clear
+            self.isolation = isolation
+            self.objectFit = objectFit
+            self.objectPosition = objectPosition
+        }
     }
 }
 
@@ -267,7 +296,12 @@ extension TailwindStyle {
                 textTransform,
                 verticalAlign,
                 whitespace,
-                wordBreak
+                wordBreak,
+                letterSpacing,
+                listStyleType,
+                listStylePosition,
+                placeholderColor,
+                placeholderOpacity
             ]
         }
         public var fontFamily : Tailwind.FontFamily?
@@ -285,6 +319,12 @@ extension TailwindStyle {
         public var verticalAlign: Tailwind.VerticalAlign?
         public var whitespace: Tailwind.Whitespace?
         public var wordBreak: Tailwind.WordBreak?
+        public var letterSpacing: Tailwind.LetterSpacing?
+        public var lineHeight: Tailwind.LineHeight?
+        public var listStyleType: Tailwind.ListStyleType?
+        public var listStylePosition: Tailwind.ListStylePosition?
+        public var placeholderColor: Tailwind.PlaceholderColor?
+        public var placeholderOpacity: Tailwind.PlaceholderOpacity?
         public init(fontFamily: Tailwind.FontFamily? = nil,
                     fontSize: Tailwind.FontSize? = nil,
                     fontStyle: Tailwind.FontStyle? = nil,
@@ -299,7 +339,13 @@ extension TailwindStyle {
                     textTransform: Tailwind.TextTransform? = nil,
                     verticalAlign: Tailwind.VerticalAlign? = nil,
                     whitespace: Tailwind.Whitespace? = nil,
-                    wordBreak: Tailwind.WordBreak? = nil) {
+                    wordBreak: Tailwind.WordBreak? = nil,
+                    letterSpacing: Tailwind.LetterSpacing? = nil,
+                    lineHeight: Tailwind.LineHeight? = nil,
+                    listStyleType: Tailwind.ListStyleType? = nil,
+                    listStylePosition: Tailwind.ListStylePosition? = nil,
+                    placeholderColor: Tailwind.PlaceholderColor? = nil,
+                    placeholderOpacity: Tailwind.PlaceholderOpacity? = nil) {
             self.fontFamily = fontFamily
             self.fontSize = fontSize
             self.fontStyle = fontStyle
@@ -315,6 +361,11 @@ extension TailwindStyle {
             self.verticalAlign = verticalAlign
             self.whitespace = whitespace
             self.wordBreak = wordBreak
+            self.letterSpacing = letterSpacing
+            self.listStyleType = listStyleType
+            self.listStylePosition = listStylePosition
+            self.placeholderColor = placeholderColor
+            self.placeholderOpacity = placeholderOpacity
         }
     }
 }
