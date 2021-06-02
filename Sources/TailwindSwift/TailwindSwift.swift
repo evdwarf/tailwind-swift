@@ -83,7 +83,12 @@ extension TailwindStyle {
                 clear,
                 isolation,
                 objectFit,
-                objectPosition
+                objectPosition,
+                overflow,
+                overscrollBehavior,
+                visibility,
+                zIndex,
+                layoutPosition
             ]
         }
         public var boxSizing: Tailwind.BoxSizing?
@@ -93,13 +98,23 @@ extension TailwindStyle {
         public var isolation: Tailwind.Isolation?
         public var objectFit: Tailwind.ObjectFit?
         public var objectPosition: Tailwind.ObjectPosition?
+        public var overflow: Tailwind.Overflow?
+        public var overscrollBehavior: Tailwind.OverscrollBehavior?
+        public var visibility: Tailwind.Visibility?
+        public var zIndex: Tailwind.ZIndex?
+        public var layoutPosition: Tailwind.LayoutPosition?
         public init(boxSizing: Tailwind.BoxSizing? = nil,
                     display: Tailwind.Display? = nil,
                     floats: Tailwind.Floats? = nil,
                     clear:Tailwind.Clear? = nil,
                     isolation: Tailwind.Isolation? = nil,
                     objectFit: Tailwind.ObjectFit? = nil,
-                    objectPosition: Tailwind.ObjectPosition? = nil) {
+                    objectPosition: Tailwind.ObjectPosition? = nil,
+                    overflow: Tailwind.Overflow? = nil,
+                    overscrollbehavior: Tailwind.OverscrollBehavior? = nil,
+                    visibility: Tailwind.Visibility? = nil,
+                    zIndex: Tailwind.ZIndex? = nil,
+                    layoutPosition: Tailwind.LayoutPosition? = nil) {
             self.boxSizing = boxSizing
             self.display = display
             self.floats = floats
@@ -107,6 +122,10 @@ extension TailwindStyle {
             self.isolation = isolation
             self.objectFit = objectFit
             self.objectPosition = objectPosition
+            self.overflow = overflow
+            self.overscrollBehavior = overscrollbehavior
+            self.visibility = visibility
+            self.zIndex = zIndex
         }
     }
 }

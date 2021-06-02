@@ -6,8 +6,8 @@ A description of this package.
 
 ### LAYOUT
 
-- [ ] [Container](https://tailwindcss.com/docs/container)
-- [ ] [Box Decoration Break](https://tailwindcss.com/docs/box-decoration-break)
+- [x] [Container](https://tailwindcss.com/docs/container)
+- [x] [Box Decoration Break](https://tailwindcss.com/docs/box-decoration-break)
 - [x] [Box Sizing](https://tailwindcss.com/docs/box-sizing)
 - [x] [Display](https://tailwindcss.com/docs/display)
 - [x] [Floats](https://tailwindcss.com/docs/floats)
@@ -15,12 +15,12 @@ A description of this package.
 - [x] [Isolation](https://tailwindcss.com/docs/isolation)
 - [x] [Object Fit](https://tailwindcss.com/docs/object-fit)
 - [x] [Object Position](https://tailwindcss.com/docs/object-position)
-- [ ] [Overflow](https://tailwindcss.com/docs/overflow)
-- [ ] [Overscroll Behavior](https://tailwindcss.com/docs/overscroll-behavior)
-- [ ] [Position](https://tailwindcss.com/docs/position)
+- [x] [Overflow](https://tailwindcss.com/docs/overflow)
+- [x] [Overscroll Behavior](https://tailwindcss.com/docs/overscroll-behavior)
+- [x] [Position](https://tailwindcss.com/docs/position)
 - [ ] [Top / Right / Bottom / Left](https://tailwindcss.com/docs/top-right-bottom-left)
-- [ ] [Visibility](https://tailwindcss.com/docs/visibility)
-- [ ] [Z-Index](https://tailwindcss.com/docs/z-index)
+- [x] [Visibility](https://tailwindcss.com/docs/visibility)
+- [x] [Z-Index](https://tailwindcss.com/docs/z-index)
 
 ### FLEXBOX
 

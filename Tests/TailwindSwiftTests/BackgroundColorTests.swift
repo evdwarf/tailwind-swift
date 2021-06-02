@@ -15,17 +15,17 @@ final class BackgroundColorTests: XCTestCase {
                         .tailwindValue, "bg-gray-50")
     }
 
-    func testred() {
+    func testRed() {
         XCTAssertEqual(Tailwind.BackgroundColor.red(.n100)
                         .tailwindValue, "bg-red-100")
     }
 
-    func testyellow() {
+    func testYellow() {
         XCTAssertEqual(Tailwind.BackgroundColor.yellow(.n200)
                         .tailwindValue, "bg-yellow-200")
     }
 
-    func testgreen() {
+    func testGreen() {
         XCTAssertEqual(Tailwind.BackgroundColor.green(.n300)
                         .tailwindValue, "bg-green-300")
     }

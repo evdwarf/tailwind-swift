@@ -15,17 +15,17 @@ final class PlaceholderColorTests: XCTestCase {
                         .tailwindValue, "placeholder-gray-50")
     }
 
-    func testred() {
+    func testRed() {
         XCTAssertEqual(Tailwind.PlaceholderColor.red(.n100)
                         .tailwindValue, "placeholder-red-100")
     }
 
-    func testyellow() {
+    func testYellow() {
         XCTAssertEqual(Tailwind.PlaceholderColor.yellow(.n200)
                         .tailwindValue, "placeholder-yellow-200")
     }
 
-    func testgreen() {
+    func testGreen() {
         XCTAssertEqual(Tailwind.PlaceholderColor.green(.n300)
                         .tailwindValue, "placeholder-green-300")
     }

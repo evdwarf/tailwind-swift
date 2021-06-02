@@ -10,6 +10,9 @@ import Foundation
 public var TailwindMarginAuto: Tailwind.Margin.Auto {
     Tailwind.Margin.Auto()
 }
+var TailwindMarginPx: Tailwind.Margin.Px {
+    Tailwind.Margin.Px()
+}
 
 public protocol TailwindMarginValueble {
     
@@ -61,6 +64,16 @@ extension Tailwind.Margin.Auto: TailwindMarginValueble {
     }
 }
 
+extension Tailwind.Margin.Px: TailwindMarginValueble {
+    
+    public var tailwindMarginValue: String {
+        "px"
+    }
+    
+    public var tailwindMarginNumber: Decimal? {
+        nil
+    }
+}
 public extension Tailwind {
     
     enum Margin: TailwindValue {
@@ -68,6 +81,7 @@ public extension Tailwind {
         typealias RawValue = String
         
         public struct Auto {}
+        struct Px {}
         
         case all(TailwindMarginValueble)
         case left(TailwindMarginValueble)
