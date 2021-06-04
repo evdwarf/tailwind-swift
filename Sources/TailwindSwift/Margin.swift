@@ -10,7 +10,7 @@ import Foundation
 public var TailwindMarginAuto: Tailwind.Margin.Auto {
     Tailwind.Margin.Auto()
 }
-var TailwindMarginPx: Tailwind.Margin.Px {
+public var TailwindMarginPx: Tailwind.Margin.Px {
     Tailwind.Margin.Px()
 }
 
@@ -67,6 +67,8 @@ extension Tailwind.Margin.Auto: TailwindMarginValueble {
 extension Tailwind.Margin.Px: TailwindMarginValueble {
     
     public var tailwindMarginValue: String {
+       // let prefix = isNegative ? "-" : "-"
+        //return "\(prefix)px"
         "px"
     }
     
@@ -81,7 +83,13 @@ public extension Tailwind {
         typealias RawValue = String
         
         public struct Auto {}
-        struct Px {}
+        public struct Px {
+            //var isNegative: Bool
+           // init(_ isNegative: Bool = false){
+              //  self.isNegative = isNegative
+           // }
+        }
+        
         
         case all(TailwindMarginValueble)
         case left(TailwindMarginValueble)
@@ -139,4 +147,5 @@ public extension Tailwind {
             rawValue
         }
     }
+
 }

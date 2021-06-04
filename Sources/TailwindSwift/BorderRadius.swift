@@ -1,0 +1,269 @@
+//
+//  BorderRadius.swift
+//  TailwindSwiftTests
+//
+//  Created by dodocha169 on 2021/06/03.
+//
+
+import Foundation
+
+public extension Tailwind {
+    
+    enum BorderRadius: TailwindValue {
+        typealias RawValue = String
+        case rounded
+        case none
+        case sm
+        case md
+        case lg
+        case xl
+        case xl2
+        case xl3
+        case full
+        case tNone
+        case rNone
+        case bNone
+        case lNone
+        case tSm
+        case rSm
+        case bSm
+        case lSm
+        case t
+        case r
+        case b
+        case l
+        case tMd
+        case rMd
+        case bMd
+        case lMd
+        case tLg
+        case rLg
+        case bLg
+        case lLg
+        case tXl
+        case rXl
+        case bXl
+        case lXl
+        case t2Xl
+        case r2Xl
+        case b2Xl
+        case l2Xl
+        case t3Xl
+        case r3Xl
+        case b3Xl
+        case l3Xl
+        case tFull
+        case rFull
+        case bFull
+        case lFull
+        case tlNone
+        case trNone
+        case brNone
+        case blNone
+        case tlSm
+        case trSm
+        case brSm
+        case blSm
+        case tl
+        case tr
+        case br
+        case bl
+        case tlMd
+        case trMd
+        case brMd
+        case blMd
+        case tlLg
+        case trLg
+        case brLg
+        case blLg
+        case tlXl
+        case trXl
+        case brXl
+        case blXl
+        case tl2Xl
+        case tr2Xl
+        case br2Xl
+        case bl2Xl
+        case tl3Xl
+        case tr3Xl
+        case br3Xl
+        case bl3Xl
+        case tlFull
+        case trFull
+        case brFull
+        case blFull
+        var rawValue: RawValue {
+            switch self {
+            case .rounded:
+                return "rounded"
+            case .none:
+                return "rounded-none"
+            case .sm:
+                return "rounded-sm"
+            case .md:
+                return "rounded-md"
+            case .lg:
+                return "rounded-lg"
+            case .xl:
+                return "rounded-xl"
+            case .xl2:
+                return "rounded-2xl"
+            case .xl3:
+                return "rounded-3xl"
+            case .full:
+                return "rounded-full"
+            case .tNone:
+                return "rounded-t-none"
+            case .rNone:
+                return "rounded-r-none"
+            case .bNone:
+                return "rounded-b-none"
+            case .tSm:
+                return "rounded-t-sm"
+            case .rSm:
+                return "rounded-r-sm"
+            case .bSm:
+                return "rounded-b-sm"
+            case .lSm:
+                return "rounded-l-sm"
+            case .t:
+                return "rounded-t"
+            case .r:
+                return "rounded-r"
+            case .b:
+                return "rounded-b"
+            case .l:
+                return "rounded-l"
+            case .tMd:
+                return "rounded-t-md"
+            case .rMd:
+                return "rounded-r-md"
+            case .bMd:
+                return "rounded-b-md"
+            case .lMd:
+                return "rounded-l-md"
+            case .tLg:
+                return "rounded-t-lg"
+            case .rLg:
+                return "rounded-r-lg"
+            case .bLg:
+                return "rounded-b-lg"
+            case .lLg:
+                return "rounded-l-lg"
+            case .tXl:
+                return "rounded-t-xl"
+            case .rXl:
+                return "rounded-r-xl"
+            case .bXl:
+                return "rounded-b-xl"
+            case .lXl:
+                return "rounded-l-xl"
+            case .t2Xl:
+                return "rounded-t-2xl"
+            case .t3Xl:
+                return "rounded-t-3xl"
+            case .b3Xl:
+                return "rounded-b-3xl"
+            case .l3Xl:
+                return "rounded-l-3xl"
+            case .tFull:
+                return "rounded-t-full"
+            case .rFull:
+                return "rounded-r-full"
+            case .bFull:
+                return "rounded-b-full"
+            case .lFull:
+                return "rounded-l-full"
+            case .tlNone:
+                return "rounded-tl-none"
+            case .trNone:
+                return "rounded-tr-none"
+            case .brNone:
+                return "rounded-br-none"
+            case .blNone:
+                return "rounded-bl-none"
+            case .tlSm:
+                return "rounded-tl-sm"
+            case .trSm:
+                return "rounded-tr-sm"
+            case .brSm:
+                return "rounded-br-sm"
+            case .blSm:
+                return "rounded-bl-sm"
+            case .tl:
+                return "rounded-tl"
+            case .tr:
+                return "rounded-tr"
+            case .br:
+                return "rounded-br"
+            case .bl:
+                return "rounded-bl"
+            case .tlMd:
+                return "rounded-tl-md"
+            case .trMd:
+                return "rounded-tr-md"
+            case .brMd:
+                return "rounded-br-md"
+            case .blMd:
+                return "rounded-bl-md"
+            case .tlLg:
+                return "rounded-tl-lg"
+            case .trLg:
+                return "rounded-tr-lg"
+            case .brLg:
+                return "rounded-br-lg"
+            case .blLg:
+                return "rounded-bl-lg"
+            case .tlXl:
+                return "rounded-tl-xl"
+            case .trXl:
+                return "rounded-tr-xl"
+            case .brXl:
+                return "rounded-br-xl"
+            case .blXl:
+                return "rounded-bl-xl"
+            case .tl2Xl:
+                return "rounded-tl-2xl"
+            case .tr2Xl:
+                return "rounded-tr-2xl"
+            case .br2Xl:
+                return "rounded-br-2xl"
+            case .bl2Xl:
+                return "rounded-bl-2xl"
+            case .tl3Xl:
+                return "rounded-tl-3xl"
+            case .tr3Xl:
+                return "rounded-tr-3xl"
+            case .br3Xl:
+                return "rounded-br-3xl"
+            case .bl3Xl:
+                return "rounded-bl-3xl"
+            case .tlFull:
+                return "rounded-tl-full"
+            case .trFull:
+                return "rounded-tr-full"
+            case .brFull:
+                return "rounded-br-full"
+            case .blFull:
+                return "rounded-bl-full"
+            case .lNone:
+                return "rounded-l-none"
+            case .r2Xl:
+                return "rounded-r-2xl"
+            case .b2Xl:
+                return "rounded-b-2xl"
+            case .l2Xl:
+                return "rounded-l-2xl"
+            case .r3Xl:
+                return "rounded-r-3xl"
+            }
+        }
+        public var tailwindValue: String {
+            rawValue
+            
+        }
+    }
+}
+
+
+

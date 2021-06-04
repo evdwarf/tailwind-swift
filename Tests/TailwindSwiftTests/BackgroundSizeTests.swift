@@ -12,7 +12,7 @@ final class BackgroundSizeTests: XCTestCase {
     
     func testAuto() {
         XCTAssertEqual(Tailwind.BackgroundSize.auto
-                        .tailwindValue, "decoration-slice")
+                        .tailwindValue, "bg-auto")
     }
     func testCover(){
         XCTAssertEqual(Tailwind.BackgroundSize.cover

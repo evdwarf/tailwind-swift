@@ -10,10 +10,10 @@ import Foundation
 public var TailwindLayoutPositionAuto: Tailwind.LayoutPosition.Auto {
     Tailwind.LayoutPosition.Auto()
 }
-var TailwindLayoutPositionFull: Tailwind.LayoutPosition.Full {
+public var TailwindLayoutPositionFull: Tailwind.LayoutPosition.Full {
     Tailwind.LayoutPosition.Full()
 }
-var TailwindLayoutPositionPx: Tailwind.LayoutPosition.Px {
+public var TailwindLayoutPositionPx: Tailwind.LayoutPosition.Px {
     Tailwind.LayoutPosition.Px()
 }
 
@@ -69,6 +69,8 @@ extension Tailwind.LayoutPosition.Auto: TailwindLayoutPositionValueble {
 extension Tailwind.LayoutPosition.Full: TailwindLayoutPositionValueble {
     
     public var tailwindLayoutPositionValue: String {
+      //  let prefix = isNegative ? "-" : "-"
+     //   return "\(prefix)full"
         "full"
     }
     
@@ -79,6 +81,8 @@ extension Tailwind.LayoutPosition.Full: TailwindLayoutPositionValueble {
 extension Tailwind.LayoutPosition.Px: TailwindLayoutPositionValueble {
     
     public var tailwindLayoutPositionValue: String {
+     //   let prefix = isNegative ? "-" : "-"
+    //    return "\(prefix)px"
         "px"
     }
     public var tailwindLayoutPositionNumber: Decimal? {
@@ -93,8 +97,18 @@ public extension Tailwind {
         typealias RawValue = String
         
         public struct Auto {}
-        struct Full {}
-        struct Px {}
+        public struct Full {
+            //var isNegative: Bool
+           // init(_ isNegative: Bool = false) {
+           //     self.isNegative = isNegative
+           // }
+        }
+        public struct Px {
+            //var isNegative: Bool
+           // init(_ isNegative: Bool = false){
+              //  self.isNegative = isNegative
+           // }
+        }
         
         case inset(TailwindLayoutPositionValueble)
         case left(TailwindLayoutPositionValueble)

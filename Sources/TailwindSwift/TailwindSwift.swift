@@ -44,6 +44,7 @@ public struct TailwindStyle: TailwindValue {
     public var border       = Border()
     public var divide       = Divide()
     public var ring         = Ring()
+    public var effects      = Effects()
     
     public init(layout:         Layout          = .init(),
                 flexbox:        Flexbox         = .init(),
@@ -55,7 +56,8 @@ public struct TailwindStyle: TailwindValue {
                 background:     Background      = .init(),
                 border:         Border          = .init(),
                 divide:         Divide          = .init(),
-                ring:           Ring            = .init())
+                ring:           Ring            = .init(),
+                effects:        Effects         = .init())
     {
         self.layout       = layout
         self.flexbox      = flexbox
@@ -68,6 +70,7 @@ public struct TailwindStyle: TailwindValue {
         self.border       = border
         self.divide       = divide
         self.ring         = ring
+        self.effects      = effects
     }
 }
 
@@ -77,6 +80,8 @@ extension TailwindStyle {
     public struct Layout: TailwindCategory {
         public var tailwindValues: Array<TailwindValue?> {
             [
+                container,
+                boxDecorationBreak,
                 boxSizing,
                 display,
                 floats,
@@ -86,11 +91,14 @@ extension TailwindStyle {
                 objectPosition,
                 overflow,
                 overscrollBehavior,
+                position,
                 visibility,
                 zIndex,
                 layoutPosition
             ]
         }
+        public var container: Tailwind.Container?
+        public var boxDecorationBreak: Tailwind.BoxDecorationBreak?
         public var boxSizing: Tailwind.BoxSizing?
         public var display: Tailwind.Display?
         public var floats: Tailwind.Floats?
@@ -100,10 +108,13 @@ extension TailwindStyle {
         public var objectPosition: Tailwind.ObjectPosition?
         public var overflow: Tailwind.Overflow?
         public var overscrollBehavior: Tailwind.OverscrollBehavior?
+        public var position: Tailwind.Position?
         public var visibility: Tailwind.Visibility?
         public var zIndex: Tailwind.ZIndex?
         public var layoutPosition: Tailwind.LayoutPosition?
-        public init(boxSizing: Tailwind.BoxSizing? = nil,
+        public init(container: Tailwind.Container? = nil,
+                    boxDecorationBreak: Tailwind.BoxDecorationBreak? = nil,
+                    boxSizing: Tailwind.BoxSizing? = nil,
                     display: Tailwind.Display? = nil,
                     floats: Tailwind.Floats? = nil,
                     clear:Tailwind.Clear? = nil,
@@ -112,9 +123,12 @@ extension TailwindStyle {
                     objectPosition: Tailwind.ObjectPosition? = nil,
                     overflow: Tailwind.Overflow? = nil,
                     overscrollbehavior: Tailwind.OverscrollBehavior? = nil,
+                    position: Tailwind.Position? = nil,
                     visibility: Tailwind.Visibility? = nil,
                     zIndex: Tailwind.ZIndex? = nil,
                     layoutPosition: Tailwind.LayoutPosition? = nil) {
+            self.container = container
+            self.boxDecorationBreak = boxDecorationBreak
             self.boxSizing = boxSizing
             self.display = display
             self.floats = floats
@@ -124,6 +138,7 @@ extension TailwindStyle {
             self.objectPosition = objectPosition
             self.overflow = overflow
             self.overscrollBehavior = overscrollbehavior
+            self.position = position
             self.visibility = visibility
             self.zIndex = zIndex
         }
@@ -394,11 +409,46 @@ extension TailwindStyle {
 extension TailwindStyle {
     public struct Background : TailwindCategory {
         public var tailwindValues: Array<TailwindValue?> {
-            [color]
+            [
+                backgroundAttachment,
+                backgroundClip,
+                backgroundColor,
+                backgroundOpacity,
+                backgroundPosition,
+                backgroundRepeat,
+                backgroundSize,
+                backgroundImage,
+                gradientColorStops
+                
+            ]
         }
-        public var color: Tailwind.BackgroundColor?
-        public init(color: Tailwind.BackgroundColor? = nil) {
-            self.color = color
+        public var backgroundAttachment: Tailwind.BackgroundAttachment?
+        public var backgroundClip: Tailwind.BackgroundClip?
+        public var backgroundColor: Tailwind.BackgroundColor?
+        public var backgroundOpacity: Tailwind.BackgroundOpacity?
+        public var backgroundPosition: Tailwind.BackgroundPosition?
+        public var backgroundRepeat: Tailwind.BackgroundRepeat?
+        public var backgroundSize: Tailwind.BackgroundSize?
+        public var backgroundImage: Tailwind.BackgroundImage?
+        public var gradientColorStops: Tailwind.GradientColorStops?
+        public init(backgroundAttachment: Tailwind.BackgroundAttachment? = nil,
+                    backgroundClip: Tailwind.BackgroundClip? = nil,
+                    backgroundColor: Tailwind.BackgroundColor? = nil,
+                    backgroundOpacity: Tailwind.BackgroundOpacity? = nil,
+                    backgroundPosition: Tailwind.BackgroundPosition? = nil,
+                    backgroundRepeat: Tailwind.BackgroundRepeat? = nil,
+                    backgroundSize: Tailwind.BackgroundSize?  = nil,
+                    backgroundImage: Tailwind.BackgroundImage? = nil,
+                    gradientColorStops: Tailwind.GradientColorStops? = nil) {
+            self.backgroundAttachment = backgroundAttachment
+            self.backgroundClip = backgroundClip
+            self.backgroundColor = backgroundColor
+            self.backgroundOpacity = backgroundOpacity
+            self.backgroundPosition = backgroundPosition
+            self.backgroundRepeat = backgroundRepeat
+            self.backgroundSize = backgroundSize
+            self.backgroundImage = backgroundImage
+            self.gradientColorStops = gradientColorStops
         }
     }
 }
@@ -409,22 +459,125 @@ extension TailwindStyle {
     
     public struct Border : TailwindCategory {
         public var tailwindValues: Array<TailwindValue?> {
-            []
+            [
+                borderRadius,
+                borderWidth,
+                borderColor,
+                borderOpacity,
+                borderStyle
+            ]
         }
-        public init() {}
+        public var borderRadius : Tailwind.BorderRadius?
+        public var borderWidth : Tailwind.BorderWidth?
+        public var borderColor : Tailwind.BorderColor?
+        public var borderOpacity : Tailwind.BorderOpacity?
+        public var borderStyle : Tailwind.BorderStyle?
+        public init(borderRadius : Tailwind.BorderRadius? = nil,
+                    borderWidth : Tailwind.BorderWidth? = nil,
+                    borderColor : Tailwind.BorderColor? = nil,
+                    borderOpacity : Tailwind.BorderOpacity? = nil,
+                    borderStyle : Tailwind.BorderStyle? = nil) {
+            self.borderRadius = borderRadius
+            self.borderWidth = borderWidth
+            self.borderColor = borderColor
+            self.borderOpacity = borderOpacity
+            self.borderStyle = borderStyle
+        }
     }
     
     public struct Divide : TailwindCategory {
         public var tailwindValues: Array<TailwindValue?> {
-            []
+            [
+                divideWidth,
+                divideColor,
+                divideOpacity,
+                divideStyle
+            ]
         }
-        public init() {}
+        public var divideWidth : Tailwind.DivideWidth?
+        public var divideColor : Tailwind.DivideColor?
+        public var divideOpacity : Tailwind.DivideOpacity?
+        public var divideStyle : Tailwind.DivideStyle?
+        public init(divideWidth : Tailwind.DivideWidth? = nil,
+                    divideColor : Tailwind.DivideColor? = nil,
+                    divideOpacity : Tailwind.DivideOpacity? = nil,
+                    divideStyle : Tailwind.DivideStyle? = nil) {
+            self.divideWidth = divideWidth
+            self.divideColor = divideColor
+            self.divideOpacity = divideOpacity
+            self.divideStyle = divideStyle
+        }
     }
     
     public struct Ring : TailwindCategory {
         public var tailwindValues: Array<TailwindValue?> {
-            []
+            [
+                ringWidth,
+                ringColor,
+                ringOpacity,
+                ringOffsetWidth,
+                ringOffsetColor
+            ]
         }
-        public init() {}
+        public var ringWidth : Tailwind.RingWidth?
+        public var ringColor : Tailwind.RingColor?
+        public var ringOpacity : Tailwind.RingOpacity?
+        public var ringOffsetWidth : Tailwind.RingOffsetWidth?
+        public var ringOffsetColor : Tailwind.RingOffsetColor?
+        public init(ringWidth : Tailwind.RingWidth? = nil,
+                    ringColor : Tailwind.RingColor? = nil,
+                    ringOpacity : Tailwind.RingOpacity? = nil,
+                    ringOffsetWidth : Tailwind.RingOffsetWidth? = nil,
+                    ringOffsetColor : Tailwind.RingOffsetColor? = nil) {
+            self.ringWidth = ringWidth
+            self.ringColor = ringColor
+            self.ringOpacity = ringOpacity
+            self.ringOffsetWidth = ringOffsetWidth
+            self.ringOffsetColor = ringOffsetColor
+        }
     }
 }
+
+
+// MARK: - Effects
+
+extension TailwindStyle {
+    public struct Effects : TailwindCategory {
+        public var tailwindValues: Array<TailwindValue?> {
+            [
+        
+            ]
+        }
+        public init() {
+            
+        }
+    }
+}
+
+// MARK: - Filters
+
+extension TailwindStyle {
+    public struct Filters : TailwindCategory {
+        public var tailwindValues: Array<TailwindValue?> {
+            [
+        
+            ]
+        }
+        public init() {
+            
+        }
+    }
+}
+public struct Backdrop : TailwindCategory {
+    public var tailwindValues: Array<TailwindValue?> {
+        [
+        
+        ]
+    }
+
+    public init() {
+       
+    }
+}
+
+

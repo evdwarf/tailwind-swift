@@ -18,7 +18,7 @@ A description of this package.
 - [x] [Overflow](https://tailwindcss.com/docs/overflow)
 - [x] [Overscroll Behavior](https://tailwindcss.com/docs/overscroll-behavior)
 - [x] [Position](https://tailwindcss.com/docs/position)
-- [ ] [Top / Right / Bottom / Left](https://tailwindcss.com/docs/top-right-bottom-left)
+- [x] [Top / Right / Bottom / Left](https://tailwindcss.com/docs/top-right-bottom-left)
 - [x] [Visibility](https://tailwindcss.com/docs/visibility)
 - [x] [Z-Index](https://tailwindcss.com/docs/z-index)
 
@@ -95,15 +95,15 @@ A description of this package.
 
 ### BACKGROUNDS
 
-- [ ] [Background Attachment](https://tailwindcss.com/docs/background-attachment)
-- [ ] [Background Clip](https://tailwindcss.com/docs/background-clip)
+- [x] [Background Attachment](https://tailwindcss.com/docs/background-attachment)
+- [x] [Background Clip](https://tailwindcss.com/docs/background-clip)
 - [x] [Background Color](https://tailwindcss.com/docs/background-color)
-- [ ] [Background Opacity](https://tailwindcss.com/docs/background-opacity)
-- [ ] [Background Position](https://tailwindcss.com/docs/background-position)
-- [ ] [Background Repeat](https://tailwindcss.com/docs/background-repeat)
-- [ ] [Background Size](https://tailwindcss.com/docs/background-size)
-- [ ] [Background Image](https://tailwindcss.com/docs/background-image)
-- [ ] [Gradient Color Stops](https://tailwindcss.com/docs/gradient-color-stops)
+- [x] [Background Opacity](https://tailwindcss.com/docs/background-opacity)
+- [x] [Background Position](https://tailwindcss.com/docs/background-position)
+- [x] [Background Repeat](https://tailwindcss.com/docs/background-repeat)
+- [x] [Background Size](https://tailwindcss.com/docs/background-size)
+- [x] [Background Image](https://tailwindcss.com/docs/background-image)
+- [x] [Gradient Color Stops](https://tailwindcss.com/docs/gradient-color-stops)
 
 ### BORDERS
 

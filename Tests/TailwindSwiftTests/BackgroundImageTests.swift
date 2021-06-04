@@ -16,34 +16,34 @@ final class BackgroundImageTests: XCTestCase {
     }
     func testT(){
         XCTAssertEqual(Tailwind.BackgroundImage.t
-                        .tailwindValue, "bg-gradient-t")
+                        .tailwindValue, "bg-gradient-to-t")
     }
     func testTr(){
         XCTAssertEqual(Tailwind.BackgroundImage.tr
-                        .tailwindValue, "bg-gradient-tr")
+                        .tailwindValue, "bg-gradient-to-tr")
     }
     func testR(){
         XCTAssertEqual(Tailwind.BackgroundImage.r
-                        .tailwindValue, "bg-gradient-r")
+                        .tailwindValue, "bg-gradient-to-r")
     }
     func testBr(){
         XCTAssertEqual(Tailwind.BackgroundImage.br
-                        .tailwindValue, "bg-gradient-br")
+                        .tailwindValue, "bg-gradient-to-br")
     }
     func testB(){
         XCTAssertEqual(Tailwind.BackgroundImage.b
-                        .tailwindValue, "bg-gradient-b")
+                        .tailwindValue, "bg-gradient-to-b")
     }
     func testBl(){
         XCTAssertEqual(Tailwind.BackgroundImage.bl
-                        .tailwindValue, "bg-gradient-bl")
+                        .tailwindValue, "bg-gradient-to-bl")
     }
     func testL(){
         XCTAssertEqual(Tailwind.BackgroundImage.l
-                        .tailwindValue, "bg-gradient-l")
+                        .tailwindValue, "bg-gradient-to-l")
     }
     func testTl(){
         XCTAssertEqual(Tailwind.BackgroundImage.tl
-                        .tailwindValue, "bg-gradient-tl")
+                        .tailwindValue, "bg-gradient-to-tl")
     }
 }
