@@ -1,0 +1,32 @@
+//
+//  Invert.swift
+//  TailwindSwift
+//
+//  Created by dodocha169 on 2021/06/04.
+//
+
+import Foundation
+
+public extension Tailwind {
+    
+    enum Invert: TailwindValue {
+        typealias RawValue = String
+        case disable
+        case invert
+        
+        var rawValue: RawValue {
+            switch self {
+            case .disable:
+                return "invert-0"
+            case .invert:
+                return "invert"
+            }
+        }
+        public var tailwindValue: String {
+          rawValue
+            
+        }
+    }
+}
+
+

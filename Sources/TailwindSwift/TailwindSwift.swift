@@ -545,11 +545,24 @@ extension TailwindStyle {
     public struct Effects : TailwindCategory {
         public var tailwindValues: Array<TailwindValue?> {
             [
-        
+                boxShadow,
+                opacity,
+                mixBlendMode,
+                backgroundBlendMode
             ]
         }
-        public init() {
-            
+        public var boxShadow : Tailwind.BoxShadow?
+        public var opacity : Tailwind.Opacity?
+        public var mixBlendMode : Tailwind.MixBlendMode?
+        public var backgroundBlendMode : Tailwind.BackgroundBlendMode?
+        public init(boxShadow : Tailwind.BoxShadow? = nil,
+                    opacity : Tailwind.Opacity? = nil,
+                    mixBlendMode : Tailwind.MixBlendMode? = nil,
+                    backgroundBlendMode : Tailwind.BackgroundBlendMode? = nil) {
+            self.boxShadow = boxShadow
+            self.opacity = opacity
+            self.mixBlendMode = mixBlendMode
+            self.backgroundBlendMode = backgroundBlendMode
         }
     }
 }
@@ -560,24 +573,151 @@ extension TailwindStyle {
     public struct Filters : TailwindCategory {
         public var tailwindValues: Array<TailwindValue?> {
             [
-        
+                filter,
+                blur,
+                brightness,
+                contrast,
+                dropShadow,
+                grayscale,
+                hueRotate,
+                invert,
+                saturate,
+                sepia
             ]
         }
-        public init() {
-            
+        public var filter : Tailwind.Filter?
+        public var blur : Tailwind.Blur?
+        public var brightness : Tailwind.Brightness?
+        public var contrast : Tailwind.Contrast?
+        public var dropShadow : Tailwind.DropShadow?
+        public var grayscale : Tailwind.Grayscale?
+        public var hueRotate : Tailwind.HueRotate?
+        public var invert : Tailwind.Invert?
+        public var saturate : Tailwind.Saturate?
+        public var sepia : Tailwind.Sepia?
+        public init(filter : Tailwind.Filter? = nil,
+                    blur : Tailwind.Blur? = nil,
+                    brightness : Tailwind.Brightness? = nil,
+                    contrast : Tailwind.Contrast? = nil,
+                    dropShadow : Tailwind.DropShadow? = nil,
+                    grayscale : Tailwind.Grayscale? = nil,
+                    hueRotate : Tailwind.HueRotate? = nil,
+                    invert : Tailwind.Invert? = nil,
+                    saturate : Tailwind.Saturate? = nil,
+                    sepia : Tailwind.Sepia? = nil) {
+            self.filter = filter
+            self.blur = blur
+            self.brightness = brightness
+            self.contrast = contrast
+            self.dropShadow = dropShadow
+            self.grayscale = grayscale
+            self.hueRotate = hueRotate
+            self.invert = invert
+            self.saturate = saturate
+            self.sepia = sepia
         }
     }
 }
 public struct Backdrop : TailwindCategory {
     public var tailwindValues: Array<TailwindValue?> {
         [
-        
+            backdropFilter,
+            backdropBlur,
+            backdropBrightness,
+            backdropContrast,
+            backdropGrayscale,
+            backdropHueRotate,
+            backdropInvert,
+            backdropOpacity,
+            backdropSaturate,
+            backdropSepia
         ]
     }
-
-    public init() {
-       
+    public var backdropFilter : Tailwind.BackdropFilter?
+    public var backdropBlur : Tailwind.BackdropBlur?
+    public var backdropBrightness : Tailwind.BackdropBrightness?
+    public var backdropContrast : Tailwind.BackdropContrast?
+    public var backdropGrayscale : Tailwind.BackdropGrayscale?
+    public var backdropHueRotate : Tailwind.BackdropHueRotate?
+    public var backdropInvert : Tailwind.BackdropInvert?
+    public var backdropOpacity : Tailwind.BackdropOpacity?
+    public var backdropSaturate : Tailwind.BackdropSaturate?
+    public var backdropSepia : Tailwind.BackdropSepia?
+    public init(backdropFilter : Tailwind.BackdropFilter? = nil,
+                backdropBlur : Tailwind.BackdropBlur? = nil,
+                backdropBrightness : Tailwind.BackdropBrightness? = nil,
+                backdropContrast : Tailwind.BackdropContrast? = nil,
+                backdropGrayscale : Tailwind.BackdropGrayscale? = nil,
+                backdropHueRotate : Tailwind.BackdropHueRotate? = nil,
+                backdropInvert : Tailwind.BackdropInvert? = nil,
+                backdropOpacity : Tailwind.BackdropOpacity? = nil,
+                backdropSaturate : Tailwind.BackdropSaturate? = nil,
+                backdropSepia : Tailwind.BackdropSepia? = nil) {
+        self.backdropFilter = backdropFilter
+        self.backdropBlur = backdropBlur
+        self.backdropBrightness = backdropBrightness
+        self.backdropContrast = backdropContrast
+        self.backdropGrayscale = backdropGrayscale
+        self.backdropHueRotate = backdropHueRotate
+        self.backdropInvert = backdropInvert
+        self.backdropOpacity = backdropOpacity
+        self.backdropSaturate = backdropSaturate
+        self.backdropSepia = backdropSepia
     }
 }
 
+
+// MARK: - Tables
+
+extension TailwindStyle {
+    public struct Tables : TailwindCategory {
+        public var tailwindValues: Array<TailwindValue?> {
+            [
+                borderCollapse,
+                tableLayout
+            ]
+        }
+        public var borderCollapse : Tailwind.BorderCollapse?
+        public var tableLayout : Tailwind.TableLayout?
+        public init(borderCollapse : Tailwind.BorderCollapse? = nil,
+                    tableLayout : Tailwind.TableLayout? = nil) {
+            self.borderCollapse = borderCollapse
+            self.tableLayout = tableLayout
+        }
+    }
+}
+
+
+// MARK: - TrasinsitonAndAnimation
+
+extension TailwindStyle {
+    public struct TrasintionAndAnimation : TailwindCategory {
+        public var tailwindValues: Array<TailwindValue?> {
+            [
+                transitionProperty,
+                transitionDuration,
+                transitionTimingFunction,
+                transitionDelay,
+                animation
+            ]
+        }
+        public var transitionProperty : Tailwind.TransitionProperty?
+        public var transitionDuration : Tailwind.TransitionDuration?
+        public var transitionTimingFunction : Tailwind.TransitionTimingFunction?
+        public var transitionDelay : Tailwind.TransitionDelay?
+        public var animation : Tailwind.Animation?
+        public init(transitionProperty : Tailwind.TransitionProperty? = nil,
+                    transitionDuration : Tailwind.TransitionDuration? = nil,
+                    transitionTimingFunction : Tailwind.TransitionTimingFunction? = nil,
+                    transitionDelay : Tailwind.TransitionDelay? = nil,
+                    animation : Tailwind.Animation? = nil) {
+            self.transitionProperty = transitionProperty
+            self.transitionDuration = transitionDuration
+            self.transitionTimingFunction = transitionTimingFunction
+            self.transitionDelay = transitionDelay
+            self.animation = animation
+            
+        }
+    }
+}
 
