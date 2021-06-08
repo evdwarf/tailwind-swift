@@ -24,7 +24,7 @@ public extension Tailwind {
             case .none:
                 return "drop-shadow-none"
             case .shadow:
-                return "drop-shadow-shadow"
+                return "drop-shadow"
             case .md:
                 return "drop-shadow-md"
             case .sm:

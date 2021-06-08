@@ -21,9 +21,9 @@ public extension Tailwind {
             case .linear:
                 return "ease-linear"
             case .fast:
-                return "ease-in"
-            case .slow:
                 return "ease-out"
+            case .slow:
+                return "ease-in"
             case .inOut:
                 return "ease-in-out"
             }

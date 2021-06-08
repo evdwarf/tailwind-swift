@@ -23,21 +23,21 @@ public extension Tailwind {
         var rawValue: RawValue {
             switch self {
             case .disable:
-                return "blur-0"
+                return "backdrop-blur-0"
             case .blur:
-                return "blur"
+                return "backdrop-blur"
             case .md:
-                return "blur-md"
+                return "backdrop-blur-md"
             case .sm:
-                return "blur-sm"
+                return "backdrop-blur-sm"
             case .lg:
-                return "blur-lg"
+                return "backdrop-blur-lg"
             case .xl:
-                return "blur-xl"
+                return "backdrop-blur-xl"
             case .xl2:
-                return "blur-2xl"
+                return "backdrop-blur-2xl"
             case .xl3:
-                return "blur-3xl"
+                return "backdrop-blur-3xl"
             }
         }
         public var tailwindValue: String {

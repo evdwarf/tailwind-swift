@@ -23,7 +23,12 @@ public struct TailwindStyle: TailwindValue {
             background,
             border,
             divide,
-            ring
+            ring,
+            effects,
+            filters,
+            tables,
+            transitionAndAnimation,
+            transforms
         ]
         return categories.compactMap({ category in
             category.tailwindValues.compactMap({ $0 })
@@ -45,6 +50,10 @@ public struct TailwindStyle: TailwindValue {
     public var divide       = Divide()
     public var ring         = Ring()
     public var effects      = Effects()
+    public var filters      = Filters()
+    public var tables       = Tables()
+    public var transitionAndAnimation = TransitionAndAnimation()
+    public var transforms   = Transforms()
     
     public init(layout:         Layout          = .init(),
                 flexbox:        Flexbox         = .init(),
@@ -57,7 +66,12 @@ public struct TailwindStyle: TailwindValue {
                 border:         Border          = .init(),
                 divide:         Divide          = .init(),
                 ring:           Ring            = .init(),
-                effects:        Effects         = .init())
+                effects:        Effects         = .init(),
+                filters:        Filters         = .init(),
+                tables:         Tables          = .init(),
+                transitionAndAnimation:                                          TransitionAndAnimation
+                    = .init(),
+                transforms:     Transforms      = .init())
     {
         self.layout       = layout
         self.flexbox      = flexbox
@@ -71,6 +85,10 @@ public struct TailwindStyle: TailwindValue {
         self.divide       = divide
         self.ring         = ring
         self.effects      = effects
+        self.filters      = filters
+        self.tables       = tables
+        self.transitionAndAnimation                                                = transitionAndAnimation
+        self.transforms   = transforms
     }
 }
 
@@ -688,10 +706,10 @@ extension TailwindStyle {
 }
 
 
-// MARK: - TrasinsitonAndAnimation
+// MARK: - TransitionAndAnimation
 
 extension TailwindStyle {
-    public struct TrasintionAndAnimation : TailwindCategory {
+    public struct TransitionAndAnimation : TailwindCategory {
         public var tailwindValues: Array<TailwindValue?> {
             [
                 transitionProperty,
@@ -721,3 +739,121 @@ extension TailwindStyle {
     }
 }
 
+
+
+// MARK: - Transforms
+
+extension TailwindStyle {
+    public struct Transforms : TailwindCategory {
+        public var tailwindValues: Array<TailwindValue?> {
+            [
+                transform,
+                transformOrigin,
+                scale,
+                rotate,
+                translate,
+                skew
+            ]
+        }
+        public var transform : Tailwind.Transform?
+        public var transformOrigin : Tailwind.TransformOrigin?
+        public var scale : Tailwind.Scale?
+        public var rotate : Tailwind.Rotate?
+        public var translate : Tailwind.Translate?
+        public var skew : Tailwind.Skew?
+        public init(transform : Tailwind.Transform? = nil,
+                    transformOrigin : Tailwind.TransformOrigin? = nil,
+                    scale : Tailwind.Scale? = nil,
+                    rotate : Tailwind.Rotate? = nil,
+                    translate : Tailwind.Translate? = nil,
+                    skew : Tailwind.Skew? = nil) {
+            self.transform = transform
+            self.transformOrigin = transformOrigin
+            self.scale = scale
+            self.rotate = rotate
+            self.translate = translate
+            self.skew = skew
+        }
+    }
+}
+
+
+// MARK: - Interactivity
+
+extension TailwindStyle {
+    public struct Interactivity : TailwindCategory {
+        public var tailwindValues: Array<TailwindValue?> {
+            [
+                appearance,
+                cursor,
+                outline,
+                pointerEvents,
+                resize,
+                userSelect
+            ]
+        }
+        public var appearance : Tailwind.Appearance?
+        public var cursor : Tailwind.Cursor?
+        public var outline : Tailwind.Outline?
+        public var pointerEvents : Tailwind.PointerEvents?
+        public var resize : Tailwind.Resize?
+        public var userSelect : Tailwind.UserSelect?
+        public init(appearance : Tailwind.Appearance? = nil,
+                    cursor : Tailwind.Cursor? = nil,
+                    outline : Tailwind.Outline? = nil,
+                    pointerEvents : Tailwind.PointerEvents? = nil,
+                    resize :  Tailwind.Resize? = nil,
+                    userSelect : Tailwind.UserSelect? = nil) {
+            self.appearance = appearance
+            self.cursor = cursor
+            self.outline = outline
+            self.pointerEvents = pointerEvents
+            self.resize = resize
+            self.userSelect = userSelect
+            
+        }
+    }
+}
+
+
+// MARK: - SVG
+
+extension TailwindStyle {
+    public struct SVG : TailwindCategory {
+        public var tailwindValues: Array<TailwindValue?> {
+            [
+                fill,
+                stroke,
+                strokeWidth
+            ]
+        }
+        public var fill : Tailwind.Fill?
+        public var stroke : Tailwind.Stroke?
+        public var strokeWidth : Tailwind.StrokeWidth?
+        public init(fill : Tailwind.Fill? = nil,
+                    stroke : Tailwind.Stroke? = nil,
+                    strokeWidth : Tailwind.StrokeWidth? = nil) {
+            self.fill = fill
+            self.stroke = stroke
+            self.strokeWidth = strokeWidth
+            
+        }
+    }
+}
+
+
+// MARK: - Accessibility
+
+extension TailwindStyle {
+    public struct Accessibility : TailwindCategory {
+        public var tailwindValues: Array<TailwindValue?> {
+            [
+             screenReaders
+            ]
+        }
+        public var screenReaders : Tailwind.ScreenReaders?
+        public init(screenReaders : Tailwind.ScreenReaders? = nil) {
+            self.screenReaders = screenReaders
+        }
+    }
+}

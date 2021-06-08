@@ -7,8 +7,8 @@
 
 import Foundation
 
-public var TailwindTranslateAuto: Tailwind.Translate.Auto {
-    Tailwind.Translate.Auto()
+public var TailwindTranslateFull: Tailwind.Translate.Full {
+    Tailwind.Translate.Full()
 }
 public var TailwindTranslatePx: Tailwind.Translate.Px {
     Tailwind.Translate.Px()
@@ -53,10 +53,10 @@ extension Double: TailwindTranslateValueble {
     }
 }
 
-extension Tailwind.Translate.Auto: TailwindTranslateValueble {
+extension Tailwind.Translate.Full: TailwindTranslateValueble {
     
     public var tailwindTranslateValue: String {
-        "auto"
+        "full"
     }
     
     public var tailwindTranslateNumber: Decimal? {
@@ -82,7 +82,7 @@ public extension Tailwind {
         
         typealias RawValue = String
         
-        public struct Auto {}
+        public struct Full {}
         public struct Px {
             //var isNegative: Bool
            // init(_ isNegative: Bool = false){

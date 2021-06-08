@@ -8,7 +8,7 @@
 import XCTest
 @testable import TailwindSwift
 
-final class FilterTests: XCTestCase {
+final class BackdropFilterTests: XCTestCase {
     
     func testNone() {
         XCTAssertEqual(Tailwind.BackdropFilter.none                                      .tailwindValue, "backdrop-filter-none")

@@ -11,15 +11,21 @@ public extension Tailwind {
 
     enum Skew: TailwindValue {
         typealias RawValue = String
-        case number(Decimal)
-        case negativeNumber(Decimal)
+        case xNumber(Decimal)
+        case negativeXNumber(Decimal)
+        case yNumber(Decimal)
+        case negativeYNumber(Decimal)
        
         var rawValue: RawValue {
             switch self {
-            case .number(let num):
-                return "skew-\(num)"
-            case .negativeNumber(let num):
-                return "-skew-\(num)"
+            case .xNumber(let num):
+                return "skew-x-\(num)"
+            case .negativeXNumber(let num):
+                return "-skew-x-\(num)"
+            case .yNumber(let num):
+                return "skew-y-\(num)"
+            case .negativeYNumber(let num):
+                return "-skew-y-\(num)"
             }
         }
         

@@ -11,21 +11,21 @@ import XCTest
 final class BackdropHueRotateTests: XCTestCase {
     
     func testNumber() {
-        XCTAssertEqual(Tailwind.HueRotate.number(0)
+        XCTAssertEqual(Tailwind.BackdropHueRotate.number(0)
                         .tailwindValue, "backdrop-hue-rotate-0")
-        XCTAssertEqual(Tailwind.HueRotate.number(30)
-                        .tailwindValue, "backdrop-hue-rotate-50")
-        XCTAssertEqual(Tailwind.HueRotate.number(90)
-                        .tailwindValue, "backdrop-hue-rotate-100")
-        XCTAssertEqual(Tailwind.HueRotate.number(180)
-                        .tailwindValue, "backdrop-hue-rotate-200")
-        XCTAssertEqual(Tailwind.HueRotate.negativeNumber(15)
+        XCTAssertEqual(Tailwind.BackdropHueRotate.number(30)
+                        .tailwindValue, "backdrop-hue-rotate-30")
+        XCTAssertEqual(Tailwind.BackdropHueRotate.number(90)
+                        .tailwindValue, "backdrop-hue-rotate-90")
+        XCTAssertEqual(Tailwind.BackdropHueRotate.number(180)
+                        .tailwindValue, "backdrop-hue-rotate-180")
+        XCTAssertEqual(Tailwind.BackdropHueRotate.negativeNumber(15)
                         .tailwindValue, "-backdrop-hue-rotate-15")
-        XCTAssertEqual(Tailwind.HueRotate.negativeNumber(60)
+        XCTAssertEqual(Tailwind.BackdropHueRotate.negativeNumber(60)
                         .tailwindValue, "-backdrop-hue-rotate-60")
-        XCTAssertEqual(Tailwind.HueRotate.negativeNumber(90)
+        XCTAssertEqual(Tailwind.BackdropHueRotate.negativeNumber(90)
                         .tailwindValue, "-backdrop-hue-rotate-90")
-        XCTAssertEqual(Tailwind.HueRotate.negativeNumber(180)
+        XCTAssertEqual(Tailwind.BackdropHueRotate.negativeNumber(180)
                         .tailwindValue, "-backdrop-hue-rotate-180")
     }
 }
