@@ -28,7 +28,10 @@ public struct TailwindStyle: TailwindValue {
             filters,
             tables,
             transitionAndAnimation,
-            transforms
+            transforms,
+            interactivity,
+            svg,
+            accessibility
         ]
         return categories.compactMap({ category in
             category.tailwindValues.compactMap({ $0 })
@@ -52,9 +55,11 @@ public struct TailwindStyle: TailwindValue {
     public var effects      = Effects()
     public var filters      = Filters()
     public var tables       = Tables()
-    public var transitionAndAnimation = TransitionAndAnimation()
+    public var transitionAndAnimation                                                    = TransitionAndAnimation()
     public var transforms   = Transforms()
-    
+    public var interactivity                                                             = Interactivity()
+    public var svg          = SVG()
+    public var accessibility = Accessibility()
     public init(layout:         Layout          = .init(),
                 flexbox:        Flexbox         = .init(),
                 grid:           Grid            = .init(),
@@ -70,8 +75,11 @@ public struct TailwindStyle: TailwindValue {
                 filters:        Filters         = .init(),
                 tables:         Tables          = .init(),
                 transitionAndAnimation:                                          TransitionAndAnimation
-                    = .init(),
-                transforms:     Transforms      = .init())
+                                                = .init(),
+                transforms:     Transforms      = .init(),
+                interactivity:  Interactivity   = .init(),
+                svg:            SVG             = .init(),
+                accessibility:  Accessibility   = .init())
     {
         self.layout       = layout
         self.flexbox      = flexbox
@@ -89,6 +97,9 @@ public struct TailwindStyle: TailwindValue {
         self.tables       = tables
         self.transitionAndAnimation                                                = transitionAndAnimation
         self.transforms   = transforms
+        self.svg          = svg
+        self.accessibility = accessibility
+        
     }
 }
 
