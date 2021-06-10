@@ -309,15 +309,31 @@ extension TailwindStyle {
         public var tailwindValues: Array<TailwindValue?> {
             [
                 width,
-                height
+                minWidth,
+                maxWidth,
+                height,
+                minHeight,
+                maxHeight
             ]
         }
         public var width: Tailwind.Width?
+        public var minWidth: Tailwind.MinWidth?
+        public var maxWidth: Tailwind.MaxWidth?
         public var height: Tailwind.Height?
+        public var minHeight: Tailwind.MinHeight?
+        public var maxHeight: Tailwind.MaxHeight?
         public init(width: Tailwind.Width? = nil,
-                    height: Tailwind.Height? = nil) {
+                    height: Tailwind.Height? = nil,
+                    minWidth: Tailwind.MinWidth? = nil,
+                    maxWidth: Tailwind.MaxWidth? = nil,
+                    minHeight: Tailwind.MinHeight? = nil,
+                    maxHeight: Tailwind.MaxHeight? = nil) {
             self.width = width
+            self.minWidth = minWidth
+            self.maxWidth = maxWidth
             self.height = height
+            self.minHeight = minHeight
+            self.maxHeight = maxHeight
         }
     }
 }
@@ -327,14 +343,17 @@ extension TailwindStyle {
 extension TailwindStyle {
     public struct Spacing: TailwindCategory {
         public var tailwindValues: Array<TailwindValue?> {
-            padding + margin
+            padding + margin + spaceBetween
         }
         public var padding: Array<Tailwind.Padding>
         public var margin: Array<Tailwind.Margin>
+        public var spaceBetween: Array<Tailwind.SpaceBetween>
         public init(padding: Array<Tailwind.Padding> = [],
-                    margin: Array<Tailwind.Margin> = []) {
+                    margin: Array<Tailwind.Margin> = [],
+                    spaceBetween: Array<Tailwind.SpaceBetween> = []) {
             self.padding = padding
             self.margin = margin
+            self.spaceBetween = spaceBetween
         }
     }
 }

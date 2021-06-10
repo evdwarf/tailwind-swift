@@ -58,16 +58,16 @@ A description of this package.
 
 - [x] [Padding](https://tailwindcss.com/docs/padding)
 - [x] [Margin](https://tailwindcss.com/docs/margin)
-- [ ] [Space Between](https://tailwindcss.com/docs/space-between)
+- [x] [Space Between](https://tailwindcss.com/docs/space-between)
 
 ### SIZING
 
 - [x] [Width](https://tailwindcss.com/docs/width)
-- [ ] [Min-Width](https://tailwindcss.com/docs/min-width)
-- [ ] [Max-Width](https://tailwindcss.com/docs/max-width)
+- [x] [Min-Width](https://tailwindcss.com/docs/min-width)
+- [x] [Max-Width](https://tailwindcss.com/docs/max-width)
 - [x] [Height](https://tailwindcss.com/docs/height)
-- [ ] [Min-Height](https://tailwindcss.com/docs/min-height)
-- [ ] [Max-Height](https://tailwindcss.com/docs/max-height)
+- [x] [Min-Height](https://tailwindcss.com/docs/min-height)
+- [x] [Max-Height](https://tailwindcss.com/docs/max-height)
 
 ### TYPOGRAPHY
 
