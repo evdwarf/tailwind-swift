@@ -12,23 +12,39 @@ final class TranslateTests: XCTestCase {
     
 
     func testX() {
-        XCTAssertEqual(Tailwind.Translate.x(0)
+        XCTAssertEqual(Tailwind.Translate.xNumber(0)
                         .tailwindValue, "translate-x-0")
-        XCTAssertEqual(Tailwind.Translate.x(-0.5)
+        XCTAssertEqual(Tailwind.Translate.negativeXNumber(0.5)
                         .tailwindValue, "-translate-x-0.5")
-        XCTAssertEqual(Tailwind.Translate.x(TailwindTranslateFull)
+        XCTAssertEqual(Tailwind.Translate.xDiv(x: 2, y: 3)
+                        .tailwindValue, "translate-x-2/3")
+        XCTAssertEqual(Tailwind.Translate.negativeXDiv(x: 3, y: 4)
+                        .tailwindValue, "-translate-x-3/4")
+        XCTAssertEqual(Tailwind.Translate.xFull
                         .tailwindValue, "translate-x-full")
-        XCTAssertEqual(Tailwind.Translate.x(TailwindTranslatePx)
+        XCTAssertEqual(Tailwind.Translate.negativeXFull
+                        .tailwindValue, "-translate-x-full")
+        XCTAssertEqual(Tailwind.Translate.xPx
                         .tailwindValue, "translate-x-px")
+        XCTAssertEqual(Tailwind.Translate.negativeXPx
+                        .tailwindValue, "-translate-x-px")
     }
     func testY() {
-        XCTAssertEqual(Tailwind.Translate.y(0)
+        XCTAssertEqual(Tailwind.Translate.yNumber(0)
                         .tailwindValue, "translate-y-0")
-        XCTAssertEqual(Tailwind.Translate.y(0.5)
-                        .tailwindValue, "translate-y-0.5")
-        XCTAssertEqual(Tailwind.Translate.y(TailwindTranslateFull)
+        XCTAssertEqual(Tailwind.Translate.negativeYNumber(0.5)
+                        .tailwindValue, "-translate-y-0.5")
+        XCTAssertEqual(Tailwind.Translate.yDiv(x: 2, y: 3)
+                        .tailwindValue, "translate-y-2/3")
+        XCTAssertEqual(Tailwind.Translate.negativeYDiv(x: 3, y: 4)
+                        .tailwindValue, "-translate-y-3/4")
+        XCTAssertEqual(Tailwind.Translate.yFull
                         .tailwindValue, "translate-y-full")
-        XCTAssertEqual(Tailwind.Translate.y(TailwindTranslatePx)
+        XCTAssertEqual(Tailwind.Translate.negativeYFull
+                        .tailwindValue, "-translate-y-full")
+        XCTAssertEqual(Tailwind.Translate.yPx
                         .tailwindValue, "translate-y-px")
+        XCTAssertEqual(Tailwind.Translate.negativeYPx
+                        .tailwindValue, "-translate-y-px"))
     }
 }

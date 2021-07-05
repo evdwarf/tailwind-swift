@@ -7,125 +7,70 @@
 
 import Foundation
 
-public var TailwindTranslateFull: Tailwind.Translate.Full {
-    Tailwind.Translate.Full()
-}
-public var TailwindTranslatePx: Tailwind.Translate.Px {
-    Tailwind.Translate.Px()
-}
-
-public protocol TailwindTranslateValueble {
-    
-    var tailwindTranslateValue: String { get }
-    var tailwindTranslateNumber: Decimal? { get }
-}
-
-extension Decimal: TailwindTranslateValueble {
-    
-    public var tailwindTranslateValue: String {
-        "\(abs(self))"
-    }
-    
-    public var tailwindTranslateNumber: Decimal? {
-        self
-    }
-}
-
-extension Int: TailwindTranslateValueble {
-    
-    public var tailwindTranslateValue: String {
-        Decimal(self).tailwindTranslateValue
-    }
-    
-    public var tailwindTranslateNumber: Decimal? {
-        Decimal(self)
-    }
-}
-
-extension Double: TailwindTranslateValueble {
-    
-    public var tailwindTranslateValue: String {
-        Decimal(self).tailwindTranslateValue
-    }
-    
-    public var tailwindTranslateNumber: Decimal? {
-        Decimal(self)
-    }
-}
-
-extension Tailwind.Translate.Full: TailwindTranslateValueble {
-    
-    public var tailwindTranslateValue: String {
-        "full"
-    }
-    
-    public var tailwindTranslateNumber: Decimal? {
-        nil
-    }
-}
-
-extension Tailwind.Translate.Px: TailwindTranslateValueble {
-    
-    public var tailwindTranslateValue: String {
-       // let prefix = isNegative ? "-" : "-"
-        //return "\(prefix)px"
-        "px"
-    }
-    
-    public var tailwindTranslateNumber: Decimal? {
-        nil
-    }
-}
 public extension Tailwind {
     
     enum Translate: TailwindValue {
-        
         typealias RawValue = String
-        
-        public struct Full {}
-        public struct Px {
-            //var isNegative: Bool
-           // init(_ isNegative: Bool = false){
-              //  self.isNegative = isNegative
-           // }
-        }
-        
-        case x(TailwindTranslateValueble)
-        case y(TailwindTranslateValueble)
-        
-        var number: Decimal? {
-            translateValue.tailwindTranslateNumber
-        }
-        
-        var prefix:String {
-            guard let number = self.number else {
-                return ""
-            }
-            return number < 0 ? "-" : ""
-        }
-        
-        var translateValue: TailwindTranslateValueble {
-            switch self {
-            case .x(let num),
-                 .y(let num):
-                return num
-            }
-        }
+        case xNumber(Decimal)
+        case negativeXNumber(Decimal)
+        case yNumber(Decimal)
+        case negativeYNumber(Decimal)
+        case xPx
+        case negativeXPx
+        case yPx
+        case negativeYPx
+        case xFull
+        case negativeXFull
+        case yFull
+        case negativeYFull
+        case xDiv(x: Int, y: Int)
+        case negativeXDiv(x: Int, y: Int)
+        case yDiv(x: Int, y: Int)
+        case negativeYDiv(x: Int, y: Int)
         
         var rawValue: RawValue {
-            let value = translateValue.tailwindTranslateValue
             switch self {
-            case.x:
-                return "\(prefix)translate-x-\(value)"
-            case.y:
-                return "\(prefix)translate-y-\(value)"
+            case .xNumber(let num):
+                return "translate-x-\(num)"
+            case .negativeXNumber(let num):
+                return "-translate-x-\(num)"
+            case .yNumber(let num):
+                return "translate-y-\(num)"
+            case .negativeYNumber(let num):
+                return "-translate-y-\(num)"
+            case .xPx:
+                return "translate-x-px"
+            case .negativeXPx:
+                return "-translate-x-px"
+            case .yPx:
+                return "translate-y-px"
+            case .negativeYPx:
+                return "-translate-y-px"
+            case .xFull:
+                return "translate-x-full"
+            case .negativeXFull:
+                return "-translate-x-full"
+            case .yFull:
+                return "translate-y-full"
+            case .negativeYFull:
+                return "-translate-y-full"
+            case .xDiv(x: let x, y: let y):
+                return "translate-x-\(x)/\(y)"
+            case .negativeXDiv(x: let x, y: let y):
+                return "-translate-x-\(x)/\(y)"
+            case .yDiv(x: let x, y: let y):
+                return "translate-y-\(x)/\(y)"
+            case .negativeYDiv(x: let x, y: let y):
+                return "-translate-y-\(x)/\(y)"
             }
         }
-        
         public var tailwindValue: String {
-            rawValue
+          rawValue
+            
         }
     }
-
 }
+
+
+
 
