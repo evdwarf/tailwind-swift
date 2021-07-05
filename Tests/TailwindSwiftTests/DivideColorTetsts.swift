@@ -30,6 +30,26 @@ final class DivideColorTests: XCTestCase {
                         .tailwindValue, "divide-green-300")
     }
 
+    func testBlue() {
+        XCTAssertEqual(Tailwind.DivideColor.blue(.n400)
+                        .tailwindValue, "divide-blue-400")
+    }
+
+    func testIndigo() {
+        XCTAssertEqual(Tailwind.DivideColor.indigo(.n500)
+                        .tailwindValue, "divide-indigo-500")
+    }
+
+    func testPurple() {
+        XCTAssertEqual(Tailwind.DivideColor.purple(.n600)
+                        .tailwindValue, "divide-purple-600")
+    }
+
+    func testPink() {
+        XCTAssertEqual(Tailwind.DivideColor.pink(.n700)
+                        .tailwindValue, "divide-pink-700")
+    }
+
     func testBlack() {
         XCTAssertEqual(Tailwind.DivideColor.black
                         .tailwindValue, "divide-black")

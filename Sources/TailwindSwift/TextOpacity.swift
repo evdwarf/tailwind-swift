@@ -11,11 +11,11 @@ public extension Tailwind {
 
     enum TextOpacity: TailwindValue {
         typealias RawValue = String
-        case n(Decimal)
+        case number(Decimal)
        
         var rawValue: RawValue {
             switch self {
-            case .n(let num):
+            case .number(let num):
                 return "text-opacity-\(num)"
             }
         }

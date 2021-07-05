@@ -29,7 +29,27 @@ final class PlaceholderColorTests: XCTestCase {
         XCTAssertEqual(Tailwind.PlaceholderColor.green(.n300)
                         .tailwindValue, "placeholder-green-300")
     }
-
+    
+    func testBlue() {
+        XCTAssertEqual(Tailwind.PlaceholderColor.blue(.n400)
+                        .tailwindValue, "placeholder-blue-400")
+    }
+    
+    func testIndigo() {
+        XCTAssertEqual(Tailwind.PlaceholderColor.indigo(.n500)
+                        .tailwindValue, "placeholder-indigo-500")
+    }
+    
+    func testPurple() {
+        XCTAssertEqual(Tailwind.PlaceholderColor.purple(.n600)
+                        .tailwindValue, "placeholder-purple-600")
+    }
+    
+    func testPink() {
+        XCTAssertEqual(Tailwind.PlaceholderColor.pink(.n700)
+                        .tailwindValue, "placeholder-pink-700")
+    }
+    
     func testBlack() {
         XCTAssertEqual(Tailwind.PlaceholderColor.black
                         .tailwindValue, "placeholder-black")

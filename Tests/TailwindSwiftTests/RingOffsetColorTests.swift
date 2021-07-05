@@ -30,6 +30,26 @@ final class RingOffsetColorTests: XCTestCase {
                         .tailwindValue, "ring-offset-green-300")
     }
 
+    func testBlue() {
+        XCTAssertEqual(Tailwind.RingOffsetColor.blue(.n400)
+                        .tailwindValue, "ring-offset-blue-400")
+    }
+
+    func testIndigo() {
+        XCTAssertEqual(Tailwind.RingOffsetColor.indigo(.n500)
+                        .tailwindValue, "ring-offset-indigo-500")
+    }
+
+    func testPurple() {
+        XCTAssertEqual(Tailwind.RingOffsetColor.purple(.n600)
+                        .tailwindValue, "ring-offset-purple-600")
+    }
+
+    func testPink() {
+        XCTAssertEqual(Tailwind.RingOffsetColor.pink(.n700)
+                        .tailwindValue, "ring-offset-pink-700")
+    }
+
     func testBlack() {
         XCTAssertEqual(Tailwind.RingOffsetColor.black
                         .tailwindValue, "ring-offset-black")

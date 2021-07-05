@@ -30,6 +30,26 @@ final class BackgroundColorTests: XCTestCase {
                         .tailwindValue, "bg-green-300")
     }
 
+    func testBlue() {
+        XCTAssertEqual(Tailwind.BackgroundColor.blue(.n400)
+                        .tailwindValue, "bg-blue-400")
+    }
+    
+    func testIndigo() {
+        XCTAssertEqual(Tailwind.BackgroundColor.indigo(.n500)
+                        .tailwindValue, "bg-indigo-500")
+    }
+    
+    func testPurple() {
+        XCTAssertEqual(Tailwind.BackgroundColor.purple(.n600)
+                        .tailwindValue, "bg-purple-600")
+    }
+    
+    func testPink() {
+        XCTAssertEqual(Tailwind.BackgroundColor.pink(.n700)
+                        .tailwindValue, "bg-pink-700")
+    }
+    
     func testBlack() {
         XCTAssertEqual(Tailwind.BackgroundColor.black
                         .tailwindValue, "bg-black")

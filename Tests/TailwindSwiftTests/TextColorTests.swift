@@ -30,6 +30,26 @@ final class TextColorTests: XCTestCase {
                         .tailwindValue, "text-green-300")
     }
 
+    func testBlue() {
+        XCTAssertEqual(Tailwind.TextColor.blue(.n400)
+                        .tailwindValue, "text-blue-400")
+    }
+
+    func testIndigo() {
+        XCTAssertEqual(Tailwind.TextColor.indigo(.n500)
+                        .tailwindValue, "text-indigo-500")
+    }
+
+    func testPurple() {
+        XCTAssertEqual(Tailwind.TextColor.purple(.n600)
+                        .tailwindValue, "text-purple-600")
+    }
+
+    func testPink() {
+        XCTAssertEqual(Tailwind.TextColor.pink(.n700)
+                        .tailwindValue, "text-pink-700")
+    }
+
     func testBlack() {
         XCTAssertEqual(Tailwind.TextColor.black
                         .tailwindValue, "text-black")

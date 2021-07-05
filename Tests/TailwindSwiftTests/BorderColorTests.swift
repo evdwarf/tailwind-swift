@@ -30,6 +30,25 @@ final class BorderColorTests: XCTestCase {
                         .tailwindValue, "border-green-300")
     }
 
+    func testBlue() {
+        XCTAssertEqual(Tailwind.BorderColor.blue(.n400)
+                        .tailwindValue, "border-blue-400")
+    }
+    
+    func testIndigo() {
+        XCTAssertEqual(Tailwind.BorderColor.indigo(.n500)
+                        .tailwindValue, "border-indigo-500")
+    }
+    
+    func testPurple() {
+        XCTAssertEqual(Tailwind.BorderColor.purple(.n600)
+                        .tailwindValue, "border-purple-600")
+    }
+    
+    func testPink() {
+        XCTAssertEqual(Tailwind.BorderColor.pink(.n700)
+                        .tailwindValue, "border-pink-700")
+    }
     func testBlack() {
         XCTAssertEqual(Tailwind.BorderColor.black
                         .tailwindValue, "border-black")
