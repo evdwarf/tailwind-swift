@@ -111,6 +111,8 @@ public extension Tailwind {
         }
         
         case inset(TailwindLayoutPositionValueble)
+        case insetX(TailwindLayoutPositionValueble)
+        case insetY(TailwindLayoutPositionValueble)
         case left(TailwindLayoutPositionValueble)
         case right(TailwindLayoutPositionValueble)
         case top(TailwindLayoutPositionValueble)
@@ -130,6 +132,8 @@ public extension Tailwind {
         var layoutPositionValue: TailwindLayoutPositionValueble {
             switch self {
             case .inset(let num),
+                 .insetX(let num),
+                 .insetY(let num),
                  .left(let num),
                  .right(let num),
                  .top(let num),
@@ -143,6 +147,10 @@ public extension Tailwind {
             switch self {
             case.inset:
                 return "\(prefix)inset-\(value)"
+            case.insetX:
+                return "\(prefix)inset-x-\(value)"
+            case.insetY:
+                return "\(prefix)inset-y-\(value)"
             case.left:
                 return "\(prefix)left-\(value)"
             case.right:

@@ -11,6 +11,8 @@ import XCTest
 final class RingOffsetWidthTests: XCTestCase {
     
     func testRing() {
+        XCTAssertEqual(Tailwind.RingOffsetWidth.n(.n0)
+                        .tailwindValue, "ring-offset-0")
         XCTAssertEqual(Tailwind.RingOffsetWidth.n(.n1)
                         .tailwindValue, "ring-offset-1")
         XCTAssertEqual(Tailwind.RingOffsetWidth.n(.n2)

@@ -11,6 +11,7 @@ public extension Tailwind {
     
     enum RingWidthValueble: Int {
         case n0 = 0
+        case n1 = 1
         case n2 = 2
         case n4 = 4
         case n8 = 8
