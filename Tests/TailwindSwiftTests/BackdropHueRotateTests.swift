@@ -19,13 +19,13 @@ final class BackdropHueRotateTests: XCTestCase {
                         .tailwindValue, "backdrop-hue-rotate-90")
         XCTAssertEqual(Tailwind.BackdropHueRotate.number(180)
                         .tailwindValue, "backdrop-hue-rotate-180")
-        XCTAssertEqual(Tailwind.BackdropHueRotate.negativeNumber(15)
+        XCTAssertEqual(Tailwind.BackdropHueRotate.number(-15)
                         .tailwindValue, "-backdrop-hue-rotate-15")
-        XCTAssertEqual(Tailwind.BackdropHueRotate.negativeNumber(60)
+        XCTAssertEqual(Tailwind.BackdropHueRotate.number(-60)
                         .tailwindValue, "-backdrop-hue-rotate-60")
-        XCTAssertEqual(Tailwind.BackdropHueRotate.negativeNumber(90)
+        XCTAssertEqual(Tailwind.BackdropHueRotate.number(-90)
                         .tailwindValue, "-backdrop-hue-rotate-90")
-        XCTAssertEqual(Tailwind.BackdropHueRotate.negativeNumber(180)
+        XCTAssertEqual(Tailwind.BackdropHueRotate.number(-180)
                         .tailwindValue, "-backdrop-hue-rotate-180")
     }
 }

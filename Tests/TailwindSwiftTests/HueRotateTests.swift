@@ -23,15 +23,16 @@ final class HueRotateTests: XCTestCase {
                         .tailwindValue, "hue-rotate-90")
         XCTAssertEqual(Tailwind.HueRotate.number(180)
                         .tailwindValue, "hue-rotate-180")
-        XCTAssertEqual(Tailwind.HueRotate.negativeNumber(15)
+        XCTAssertEqual(Tailwind.HueRotate.number(-15)
                         .tailwindValue, "-hue-rotate-15")
-        XCTAssertEqual(Tailwind.HueRotate.negativeNumber(30)
+        XCTAssertEqual(Tailwind.HueRotate.number(-30)
                         .tailwindValue, "-hue-rotate-30")
-        XCTAssertEqual(Tailwind.HueRotate.negativeNumber(60)
+        XCTAssertEqual(Tailwind.HueRotate.number(-60)
                         .tailwindValue, "-hue-rotate-60")
-        XCTAssertEqual(Tailwind.HueRotate.negativeNumber(90)
+        XCTAssertEqual(Tailwind.HueRotate.number(-90)
                         .tailwindValue, "-hue-rotate-90")
-        XCTAssertEqual(Tailwind.HueRotate.negativeNumber(180)
+        XCTAssertEqual(Tailwind.HueRotate.number(-180)
                         .tailwindValue, "-hue-rotate-180")
+        
     }
 }

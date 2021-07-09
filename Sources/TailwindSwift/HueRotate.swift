@@ -7,19 +7,67 @@
 
 import Foundation
 
-public extension Tailwind {
 
+public protocol TailwindHueRotateValueble {
+    
+    var tailwindHueRotateNumber: Decimal? { get }
+}
+
+extension Decimal: TailwindHueRotateValueble {
+
+    public var tailwindHueRotateNumber: Decimal? {
+        self
+    }
+}
+
+extension Int: TailwindHueRotateValueble {
+    
+    public var tailwindHueRotateNumber: Decimal? {
+        Decimal(self)
+    }
+}
+
+extension Double: TailwindHueRotateValueble {
+    
+    
+    public var tailwindHueRotateNumber: Decimal? {
+        Decimal(self)
+    }
+}
+
+
+public extension Tailwind {
+    
     enum HueRotate: TailwindValue {
+        
         typealias RawValue = String
-        case number(Decimal)
-        case negativeNumber(Decimal)
-       
-        var rawValue: RawValue {
+        
+        
+        case number(TailwindHueRotateValueble)
+        
+        var number: Decimal? {
+            hueRotateValue.tailwindHueRotateNumber
+        }
+        
+        var prefix:String {
+            guard let number = self.number else {
+                return ""
+            }
+            return number < 0 ? "-" : ""
+        }
+        
+        var hueRotateValue: TailwindHueRotateValueble {
             switch self {
             case .number(let num):
-                return "hue-rotate-\(num)"
-            case .negativeNumber(let num):
-                return "-hue-rotate-\(num)"
+                return num
+            }
+        }
+        
+        var rawValue: RawValue {
+            let value = hueRotateValue.tailwindHueRotateNumber
+            switch self {
+            case.number:
+                return "\(prefix)hue-rotate-\(value)"
             }
         }
         
@@ -27,4 +75,5 @@ public extension Tailwind {
             rawValue
         }
     }
+
 }

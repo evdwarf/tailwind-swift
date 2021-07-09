@@ -11,7 +11,7 @@ import XCTest
 final class BackdropInvertTests: XCTestCase {
     
     func testInvert() {
-        XCTAssertEqual(Tailwind.BackdropInvert.invert                            .tailwindValue, "backdrop-invert")
+        XCTAssertEqual(Tailwind.BackdropInvert.invert                                       .tailwindValue, "backdrop-invert")
     }
     func testDisable(){
         XCTAssertEqual(Tailwind.BackdropInvert.disable

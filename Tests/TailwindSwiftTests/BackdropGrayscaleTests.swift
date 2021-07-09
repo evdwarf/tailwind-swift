@@ -11,7 +11,7 @@ import XCTest
 final class BackdropGrayscaleTests: XCTestCase {
     
     func testGrayscale() {
-        XCTAssertEqual(Tailwind.BackdropGrayscale.grayscale                      .tailwindValue, "backdrop-grayscale")
+        XCTAssertEqual(Tailwind.BackdropGrayscale.grayscale                                 .tailwindValue, "backdrop-grayscale")
     }
     func testDisable(){
         XCTAssertEqual(Tailwind.BackdropGrayscale.disable

@@ -11,7 +11,7 @@ import XCTest
 final class BackdropSepiaTests: XCTestCase {
     
     func testSepia() {
-        XCTAssertEqual(Tailwind.BackdropSepia.sepia                              .tailwindValue, "backdrop-sepia")
+        XCTAssertEqual(Tailwind.BackdropSepia.sepia                                         .tailwindValue, "backdrop-sepia")
     }
     func testDisable(){
         XCTAssertEqual(Tailwind.BackdropSepia.disable

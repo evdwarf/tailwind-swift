@@ -14,9 +14,9 @@ final class BackdropBlurTests: XCTestCase {
         XCTAssertEqual(Tailwind.BackdropBlur.blur
                         .tailwindValue, "backdrop-blur")
     }
-    func testDisable(){
-        XCTAssertEqual(Tailwind.BackdropBlur.disable
-                        .tailwindValue, "backdrop-blur-0")
+    func testNone(){
+        XCTAssertEqual(Tailwind.BackdropBlur.none
+                        .tailwindValue, "backdrop-blur-none")
     }
     func testSm(){
         XCTAssertEqual(Tailwind.BackdropBlur.sm

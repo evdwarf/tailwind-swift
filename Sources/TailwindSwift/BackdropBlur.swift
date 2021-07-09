@@ -11,7 +11,7 @@ public extension Tailwind {
     
     enum BackdropBlur: TailwindValue {
         typealias RawValue = String
-        case disable
+        case none
         case blur
         case md
         case sm
@@ -22,8 +22,8 @@ public extension Tailwind {
         
         var rawValue: RawValue {
             switch self {
-            case .disable:
-                return "backdrop-blur-0"
+            case .none:
+                return "backdrop-blur-none"
             case .blur:
                 return "backdrop-blur"
             case .md:
